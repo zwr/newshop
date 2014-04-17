@@ -1,0 +1,82 @@
+NewShop collection:
+
+_id
+name
+description (markdown)
+url
+quantity
+price
+
+rails generate scaffold Product id:integer name:string description:string url:string quantity:decimal price:decimal
+
+
+select products.products_id, products_name, products_description, products_url, 
+       products_viewed, products_quantity, products_image, products_price
+from products inner join products_description 
+  on products.products_id = products_description.products_id
+where language_id = 2
+INTO OUTFILE '/tmp/products_data'
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n\n\n';
+
+Zencart table: products_description
+
+products_id
+language_id
+products_name
+products_description
+products_url
+products_viewed
+
+
+ZenCart table: products
+
+* products_id 
+products_type
+* products_quantity
+products_model
+* products_image
+* products_price
+products_virtual
+products_date_added
+products_last_modified
+products_date_available
+products_weight
+products_status
+products_tax_class_id
+manufacturers_id
+products_ordered
+products_quantity_order_min
+products_quantity_order_units
+products_priced_by_attribute
+product_is_free
+product_is_call
+products_quantity_mixed
+product_is_always_free_shipping
+products_qty_box_status
+products_quantity_order_max
+products_sort_order
+products_discount_type
+products_discount_type_from
+products_price_sorter
+master_categories_id
+products_mixed_discount_quantity
+metatags_title_status
+metatags_products_name_status
+metatags_model_status
+metatags_price_status
+metatags_title_tagline_status
+product_can_ship
+idsupplier
+supplier_unit_name
+supplier_estimated_products_in_uni
+supplier_quantitiy_is_estimated
+supplier_product_id
+supplier_order_unit_count
+unpacked_products_id
+unpacked_products_in_this_product
+product_is_frozen
+pricing_comment
+sort_order_supply
+is_supply_item 
