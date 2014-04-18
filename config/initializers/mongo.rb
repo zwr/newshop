@@ -1,0 +1,1 @@
+MongoMapper.database = "newshop-#{Rails.env}"

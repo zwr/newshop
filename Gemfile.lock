@@ -1,3 +1,14 @@
+GIT
+  remote: git://github.com/mongomapper/mongomapper.git
+  revision: 9b87dee507802a8cb96f2d316802c9fd241448c8
+  tag: v0.13.0.beta2
+  specs:
+    mongo_mapper (0.13.0.beta2)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0)
+      mongo (~> 1.8)
+      plucky (~> 0.6.5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -28,6 +39,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    bson (1.10.0)
     builder (3.2.2)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -53,7 +65,11 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     minitest (5.3.3)
+    mongo (1.10.0)
+      bson (~> 1.10.0)
     multi_json (1.9.2)
+    plucky (0.6.6)
+      mongo (~> 1.5)
     polyglot (0.3.4)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -120,6 +136,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
+  mongo_mapper!
   rails (= 4.1.0)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
