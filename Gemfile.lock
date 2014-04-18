@@ -94,6 +94,7 @@ GEM
     rake (10.3.0)
     rdoc (4.1.1)
       json (~> 1.4)
+    redcarpet (3.1.1)
     ref (1.0.5)
     sass (3.2.19)
     sass-rails (4.0.3)
@@ -141,6 +142,7 @@ DEPENDENCIES
   jquery-rails
   mongo_mapper!
   rails (= 4.1.0)
+  redcarpet
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring

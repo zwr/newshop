@@ -38,3 +38,7 @@ gem 'spring',        group: :development
 
 gem 'mongo_mapper', :git => "git://github.com/mongomapper/mongomapper.git", :tag => "v0.13.0.beta2"
 gem 'bson_ext'
+
+# Markdown parser, global object Markdown defined in Application.rb with object
+# accessible as NewshopSqlite::Application::Markdown
+gem 'redcarpet'
