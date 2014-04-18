@@ -7,7 +7,7 @@ url
 quantity
 price
 
-rails generate scaffold Product id:integer name:string description:string url:string quantity:decimal price:decimal
+rails generate scaffold Product id:integer name:string description:string url:string quantity:decimal price:decimal --skip-migrations
 
 
 select products.products_id, products_name, products_description, products_url, 

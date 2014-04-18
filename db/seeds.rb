@@ -5,3 +5,24 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Product.create([
+  { 
+    id:           130,
+    name:         'Sian jauheliha 10 kg',
+    url:          'http://google.com',
+    quantity:     12,
+    price:        17.1053,   
+    description:  (<<-DESC.strip_heredoc),
+        **VALIKOIMISTA POISTUVA PAKKAUSKOKO!**
+        
+        #10kg sian jauhelihaa pakattuna 625g annospusseihin.
+        **RAVINTOSISÄLTÖ /100 g:**
+        * Energiaa 1014 kJ 
+        * Proteiinia 14,70 g
+        * Rasvaa 19,00 g
+        * Mineraalit 1,00 g
+        * Kosteus 76,80 %
+        DESC
+  }
+])
