@@ -1,8 +1,8 @@
 class Product
   include MongoMapper::Document
   
-  key :name, String
-  key :description, String
+  key :name, String, :required => true
+  key :description, String, :required => true
   key :url, String
   key :quantity, Float
   key :price, Float
