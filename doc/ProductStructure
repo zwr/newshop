@@ -11,7 +11,8 @@ rails generate scaffold Product id:integer name:string description:string url:st
 
 
 select products.products_id, products_name, products_description, products_url, 
-       products_viewed, products_quantity, products_image, products_price
+       products_viewed, products_quantity, products_image, products_price,
+       unpacked_products_id, unpacked_products_in_this_product
 from products inner join products_description 
   on products.products_id = products_description.products_id
 where language_id = 2
@@ -19,6 +20,94 @@ INTO OUTFILE '/tmp/products_data'
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n\n\n';
+
+select products.products_id, products_name, products_image, 
+       unpacked_products_id, unpacked_products_in_this_product
+from products inner join products_description 
+  on products.products_id = products_description.products_id
+where language_id = 2
+  and  (unpacked_products_id is null
+        or unpacked_products_id = 0)
+order by products_name;
+
+select products.products_id, products_name
+from products inner join products_description 
+  on products.products_id = products_description.products_id
+where language_id = 2
+  and  (unpacked_products_id is null
+        or unpacked_products_id = 0)
+order by products_name
+INTO OUTFILE '/tmp/products_data'
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n';
+
+Possible unmarked duplicates
+
+Products to ignore:
+
+- 505 - gift certificate
+- 426 - vain postimaksu
+
+
+
+mysql> show fields from products;
++------------------------------------+------------------+------+-----+---------------------+----------------+
+| Field        (599 items in table)  | Type             | Null | Key | Default             | Extra          |
++------------------------------------+------------------+------+-----+---------------------+----------------+
+| products_id       (used)                 | int(11)          | NO   | PRI | NULL                | auto_increment |
+| products_type    (599x1)           | int(11)          | NO   |     | 1                   |                |
+| products_quantity   (1x-1, 346x0)  | float            | NO   |     | 0                   |                |
+| products_model (1x"GIFT-10", rest empty) varchar(32)  | YES  | MUL | NULL                |                |
+|       GIFT-10 is lahjakorti, it is also virtual=true, products_id, and should be ignored.                 |
+| products_image (92*empty)          | varchar(64)      | YES  |     | NULL                |                |
+| products_price                     | decimal(15,4)    | NO   |     | 0.0000              |                |
+| products_virtual (only 505)        | tinyint(1)       | NO   |     | 0                   |                |
+| products_date_added   (used)       | datetime         | NO   | MUL | 0001-01-01 00:00:00 |                |
+| products_last_modified (used)      | datetime         | YES  |     | NULL                |                |
+| products_date_available  (used)    | datetime         | YES  | MUL | NULL                |                |
+| products_weight   (132*0, used)    | float            | NO   |     | 0                   |                |
+| products_status   (299*0, 300*1)   | tinyint(1)       | NO   | MUL | 0                   |                |
+| products_tax_class_id              | int(11)          | NO   |     | 0                   |                |
+|        (1x0-505, 97*1-general, 500*2-food, 1*4-books)                                                     |
+| manufacturers_id    (not used)     | int(11)          | YES  | MUL | NULL                |                |
+| products_ordered  (41*0)           | float            | NO   | MUL | 0                   |                |
+| products_quantity_order_min (not used) float          | NO   |     | 1                   |                |
+| products_quantity_order_units (not used) float        | NO   |     | 1                   |                |
+| products_priced_by_attribute (not used) tinyint(1)    | NO   |     | 0                   |                |
+| product_is_free   (not used)       | tinyint(1)       | NO   |     | 0                   |                |
+| product_is_call (not used)         | tinyint(1)       | NO   |     | 0                   |                |
+| products_quantity_mixed  (not used)| tinyint(1)       | NO   |     | 0                   |                |
+| product_is_always_free_shipping (not used) tinyint(1) | NO   |     | 0                   |                |
+| products_qty_box_status  (not used)| tinyint(1)       | NO   |     | 1                   |                |
+| products_quantity_order_max (not used) float          | NO   |     | 0                   |                |
+| products_sort_order     (used)     | int(11)          | NO   | MUL | 0                   |                |
+| products_discount_type  (not used) | tinyint(1)       | NO   |     | 0                   |                |
+| products_discount_type_from(not used)tinyint(1)       | NO   |     | 0                   |                |
+| products_price_sorter    (weird, ignore) decimal(15,4)| NO   | MUL | 0.0000              |                |
+| master_categories_id    (used)     | int(11)          | NO   | MUL | 0                   |                |
+| products_mixed_discount_quantity   | tinyint(1)       | NO   |     | 1                   |                |
+| metatags_title_status     (not used) tinyint(1)       | NO   |     | 0                   |                |
+| metatags_products_name_status (not used)tinyint(1)    | NO   |     | 0                   |                |
+| metatags_model_status  (not used)  | tinyint(1)       | NO   |     | 0                   |                |
+| metatags_price_status  (not used)  | tinyint(1)       | NO   |     | 0                   |                |
+| metatags_title_tagline_status (not used)tinyint(1)    | NO   |     | 0                   |                |
+| product_can_ship   (415x0, 184x1)  | int(10) unsigned | NO   |     | 0                   |                |
+| idsupplier    (used, 81x0/not set) | int(10) unsigned | NO   |     | NULL                |                |
+| supplier_unit_name                 | varchar(45)      | NO   |     |                     |                |
+| supplier_estimated_products_in_uni | decimal(14,2)    | NO   |     | 1.00                |                |
+| supplier_quantitiy_is_estimated    | int(10) unsigned | NO   |     | 0                   |                |
+| supplier_product_id (496xempty)    | varchar(45)      | NO   |     |                     |                |
+| supplier_order_unit_count          | decimal(14,2)    | NO   |     | 1.00                |                |
+|         (588*1, 4*14, 7*25 - probably not used for anything anymore)
+| unpacked_products_id               | int(10) unsigned | YES  | MUL | NULL                |                |
+|         (121xnull, 409x0, rest are paired)                                                                |
+| unpacked_products_in_this_product  | decimal(14,4)    | YES  |     | 0.0000              |                |
+| product_is_frozen (483x0, 116x1)   | int(10) unsigned | NO   |     | 0                   |                |
+| pricing_comment     (not used)     | varchar(255)     | NO   |     | ""                  |                |
+| sort_order_supply   (used)         | int(10) unsigned | NO   |     | 9999                |                |
+| is_supply_item  (49x0, 550x1)      | int(1) unsigned  | NO   |     | 1                   |                |
++------------------------------------+------------------+------+-----+---------------------+----------------+
+
 
 Zencart table: products_description
 
