@@ -3,7 +3,6 @@ class Product
 
   # Following fields are compulsory:
   # id (implicitelly defined by MongoMapper),
-  # name (string), description (markdown or html_safe).
   field :name, type: String
   field :description, type: String
 
