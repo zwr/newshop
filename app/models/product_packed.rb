@@ -12,10 +12,11 @@ class ProductPacked < Product
   # key :quantity, Float
   # key :price, Float
 
-  key :quantity_packed,   Float
-  key :quantity_unpacked, Float
-  key :price_packed,      Float
-  key :price_unpacked,    Float
+  field :quantity_packed,   type: Float
+  field :quantity_unpacked, type: Float
+  field :price_packed,      type: Float
+  field :price_unpacked,    type: Float
+  field :packing,           type: Float
 
   # Method show_price must be defined in every subclass and must
   # show the price as it is displayed in the product view

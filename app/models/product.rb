@@ -1,17 +1,20 @@
 class Product
-  include MongoMapper::Document
+  include Mongoid::Document
 
   # Following fields are compulsory:
   # id (implicitelly defined by MongoMapper),
   # name (string), description (markdown or html_safe).
-  key :name, String, :required => true
-  key :description, String, :required => true
+  field :name, type: String
+  field :description, type: String
 
   # Other fields, that might not be used by
   # inherited classes:
-  key :url, String
-  key :quantity, Float
-  key :price, Float
+  field :url, type: String
+  field :quantity, type: Float
+  field :price, type: Float
+
+  validates :name, uniqueness: true, presence: true
+  validates :description, presence: true
 
   def description_html
     Newshop::Application::Markdown.render(description).html_safe
