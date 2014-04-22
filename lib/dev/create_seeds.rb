@@ -21,9 +21,9 @@ end
 puts (<<-OPEINING_PART)
 # This file contains the seed data taken from the MH current database, but
 # a little bit simplified.
-# 
+#
 # Catalog looks like this:
-# 
+#
 # Pakaste lihat-> (89)
 #   |_ Nauta (24)
 #   |_ Possu (18)
@@ -84,31 +84,31 @@ client = Mysql2::Client.new(
  :username => "root",
  :database => "mh1",
 )
-
+#products.*,products_description 'desc',products_url url, products_viewed
 rs = client.query(<<-QUERYSIMPLEPRODUCTS)
-    SELECT products.*, products_name name, products_description 'desc', 
-           products_url url, products_viewed
-    FROM products JOIN products_description 
+    SELECT  products.products_id,products_name name
+    FROM products JOIN products_description
       ON products.products_id = products_description.products_id
     WHERE (unpacked_products_id is null or unpacked_products_id = 0)
       AND language_id = 2
       AND (NOT products.products_id in (505, 426))
+      AND products.products_status = 1
     ORDER BY name
   QUERYSIMPLEPRODUCTS
 output = rs.map do |row|
   puts <<-SIMPLE_PRODUCT_DEFINITION
-  { 
+  {
     id:           '#{row['products_id']}',
     name:         '#{row['name'].gsub(/'/){ "\\'" }}',
     url:          '#{row['url']}',
     quantity:     #{row['products_quantity']},
-    price:        #{row['products_price']},   
+    price:        #{row['products_price']},
     description:  (<<-DESC.strip_heredoc),
         #{row['desc'].indent(8)}
         DESC
-  },    
+  },
   SIMPLE_PRODUCT_DEFINITION
-end 
+end
 
 puts (<<-CLOSING_PART)
 ])

@@ -1,0 +1,594 @@
+Available packed:
+
+---+--------------------------------------+-----+-------------------------------------------+----+----+
+ id| name                                 |p_id | name_packed                               |pack| r  |
+---+--------------------------------------+-----+-------------------------------------------+----+----+
+254| Kasvissose vihreä 500g               | 661 | Kasvissose vihreä 9kg, 18x500g            |17.0|0.05|
+495| Lihakasvisrisotto 800g               | 489 | Lihakasvisrisotto 11,2kg                  |14.0|0.07|
+475| Lihaseos 800g                        | 476 | Lihaseos ltk 14 pötköä, 11,2kg            |14.0|0.07|
+232| Murren kanakasvis -mix 500g          | 231 | Murren kanakasvis -mix 9kg, 18x500g       |18.0|0.05|
+226| Murren lihakasvis -mix 500g          | 225 | Murren lihakasvis -mix 9kg, 18x500g       |18.0|0.05|
+230| Murren lihaluu -mix 500g             | 229 | Murren lihaluu -mix 9kg, 18x500g          |18.0|0.05|
+539| Murren multi -mix 500g               | 538 | Murren multi -mix 9kg, 18x500g            |18.0|0.05|
+298| Murren poromix 500g                  | 302 | Murren poro -mix ltk, 27 pötköä           |27.0|0.03|
+228| Murren sikakasvis -mix 500g          | 227 | Murren sikakasvis -mix 9kg, 18x500g       |18.0|0.05|
+331| Murren voima-mix 500g                | 330 | Murren voima-mix 9kg, 18x500g             |27.0|0.03|
+256| Mush Jauhettu lohi 500g              | 670 | Mush Jauhettu lohi 9kg, 18x500g           |18.0|0.05|
+365| Mush Kalkkunan luinen jauheliha 500g | 672 | Kalkkunan luinen jauheliha 9kg, 18x500g   |18.0|0.05|
+353| Mush Kanan lihaluujauheliha 500g     | 655 | Mush Kanan lihaluujauheliha 9kg, 18x500g  |17.0|0.05|
+546| Mush Naudan jauheliha 500g           | 644 | Mush Naudan jauheliha 9kg, 18 x 500g      |18.0|0.05|
+352| Mush Naudan maha 500g                | 671 | Mush Naudan maha 9kg, 18x500g             |18.0|0.05|
+347| Mush Sika-nauta jauheliha 500g       | 654 | Mush Sika-nauta jauheliha 9kg, 18x500g    |17.0|0.05|
+213| Naudan herkkuluu 1kpl                | 213 | Naudan herkkuluu 1kpl                     | 0.0|0.02|
+211| Naudan savulumpio 1kpl               | 211 | Naudan savulumpio 1kpl                    | 0.0|0.05|
+548| Sian jauheliha 500g                  | 656 | Sian jauheliha 9kg, 18x500g               |18.0|0.05|
+282| Siankorva 1 kpl                      | 283 | Siankorva 10 kpl                          |10.0|0.10|
+468| Sika-nauta jauheliha 800g            | 469 | Sika-nauta jauheliha ltk 14 pötköä, 11,2kg|14.0|0.07|
+---+--------------------------------------+-----+-------------------------------------------+----+----+
+
+Available unpacked (261 products):
+
++-------------+-----------------------------------------------------------+
+| products_id | name                                                      |
++-------------+-----------------------------------------------------------+
+|         236 | Alt 1kg                                                   |
+|         486 | Arthrobalans Plus 50 tablettia                            |
+|         773 | B-balans 100ml                                            |
+|         774 | B-balans 1l                                               |
+|         706 | Back on Track koiran fleece loimi 70                      |
+|         777 | Back on Track koiran matkapeti 100x120cm                  |
+|         714 | Back on Track koiran verkkoloimi 67                       |
+|         715 | Back on Track koiran verkkoloimi 70                       |
+|         710 | Back on Track koiranloimi 31                              |
+|         712 | Back on Track koiranloimi 63                              |
+|         705 | Back on Track koiranloimi 67                              |
+|         713 | Back on Track koiranloimi 78                              |
+|         533 | Biker Set - teline polkupyörään                           |
+|         483 | Biolatte 4-legs 450g                                      |
+|         484 | Biolatte Original 110 kapselia                            |
+|         357 | Biotiini Forte 60 tablettia                               |
+|         778 | Black Horse Pellavarouhe 1,5kg                            |
+|         742 | Bocados herkkutikut - kana-riisi 300g                     |
+|         409 | Boomer pallo 6"                                           |
+|         765 | Broilerin selkärankoja 10kg                               |
+|         248 | Broilerin sisäelinseos 500g                               |
+|         504 | Bull's stick kokonainen                                   |
+|         561 | Bull's stick kokonainen 4kpl                              |
+|         770 | C-balans 200g                                             |
+|         356 | C-Rakeet 500g                                             |
+|         775 | Calci Strong + D3, 150tbl                                 |
+|         516 | Cartivet + MSM 100tbl                                     |
+|         319 | Clean balans 1l                                           |
+|         402 | Doggy De-tox 100 tablettia                                |
+|         639 | Doggy-frisbee KELLUVA 22cm                                |
+|         464 | Dragråttan hiihtovyö                                      |
+|         462 | Dragråttan R-valjas                                       |
+|         465 | Dragråttan vatsan lämmitin                                |
+|         463 | Dragråttan X-valjas                                       |
+|         771 | E-balans 100ml                                            |
+|         772 | E-balans 1l                                               |
+|         399 | Easy Green 250g                                           |
+|         624 | Extreme Kong Flyer                                        |
+|         573 | Fit Dog Recovery palautusjuomajauhe 600g                  |
+|         638 | FitDog shaker                                             |
+|         541 | Flying dog mineral drink 900g                             |
+|         461 | FoOlee lahjapakkaus                                       |
+|         695 | Golden Eagle Premium Adult 15kg                           |
+|         696 | Golden Eagle Super Premium Adult 25/15                    |
+|         697 | Golden Eagle Super Premium Lamb&Rice 15kg                 |
+|         698 | Golden Eagle Super Premium Performance/Puppy 30/20        |
+|         459 | Golden Eagle valopanta koko L                             |
+|         482 | Golden Eagle valopanta koko M                             |
+|         458 | Golden Eagle valopanta koko S                             |
+|         375 | Grizzly villin lohen öljy 250ml                           |
+|         376 | Grizzly villin lohen öljy 500ml                           |
+|         235 | heviNeu 1kg                                               |
+|         434 | Hirssisuurimo 1kg                                         |
+|         584 | Hirven luut 1,5kg                                         |
+|         359 | Hivenrekku jauhe 200g                                     |
+|         787 | HURJA Broilerin lihaluujauheliha 400g                     |
+|         718 | HURJA Broilerin lihaluujauheliha 6,4kg                    |
+|         721 | HURJA Broilerin luuton jauheliha 200g                     |
+|         763 | HURJA Broilerin luuton jauheliha 400g                     |
+|         788 | HURJA Broilerin sydämiä 400g                              |
+|         733 | HURJA Jauhettu lohi 200g                                  |
+|         739 | HURJA Kalkkuna-kana-ateria 200g                           |
+|         736 | HURJA Kalkkunamix 500g                                    |
+|         601 | HURJA Kalkkunan kaula kokonainen 4kpl                     |
+|         734 | HURJA Kalkkunan luuton jauheliha 200g                     |
+|         784 | HURJA Kalkkunan luuton jauheliha 400g                     |
+|         783 | HURJA Kalkkunan luuton jauheliha 6,4kg, 16x400g           |
+|         738 | HURJA Kana-ateria 200g                                    |
+|         767 | HURJA Kana-ateria 500g                                    |
+|         786 | HURJA Lampaan rasva 500g                                  |
+|         725 | HURJA Naudan jauheliha 200g                               |
+|         785 | HURJA Naudan jauheliha 400g                               |
+|         747 | HURJA Naudan palaliha 400g                                |
+|         790 | HURJA Poromix 500g                                        |
+|         722 | HURJA Poron luuton jauheliha 200g                         |
+|         724 | HURJA Poron sisäelinseos 200g                             |
+|         729 | HURJA Possun jauhelihaa 200g                              |
+|         731 | HURJA Possun maksa jauhettu 200g                          |
+|         730 | HURJA Possun palaliha 400g                                |
+|         762 | HURJA Sika-nauta jauheliha 200g                           |
+|         728 | HURJA Sika-nauta jauheliha 400g                           |
+|         506 | Islamer merilevä 1kg                                      |
+|         503 | Jauhettu lohi 800g                                        |
+|         415 | Juuttipatukka kahvalla 30x8cm                             |
+|         379 | Kala ja Peura - 'Daily-Dog' Cuisine 1kg                   |
+|         441 | Kala ja Peura - 'Daily-Dog' Cuisine 5kg                   |
+|         406 | Kalkkirekku rakeet 300g                                   |
+|         555 | Kalkkuna-mix 500g                                         |
+|         474 | Kalkkunan luuton jauheliha 10kg                           |
+|         558 | Kana-mix 500g                                             |
+|         552 | Kanan kauloja 1,5kg                                       |
+|         246 | Kanan selkäranka 1,5kg                                    |
+|         553 | Kanan siipiä 1,5kg                                        |
+|         492 | Kaurahiutale 1kg                                          |
+|         398 | Keepers jauhe 250mg                                       |
+|         588 | Kennelmix ltk 11kg                                        |
+|         234 | kevytNeu 1kg                                              |
+|         575 | Kissojen barf liha-ateria 300g                            |
+|         623 | Kong pallo                                                |
+|         627 | Kong Safestix M                                           |
+|         626 | Kong Squeezz Football L                                   |
+|         625 | Kong Stuff täyttötahna - maksa                            |
+|         760 | Kong Tugga Wubba XL                                       |
+|         768 | Kong Wubba L                                              |
+|         544 | Kuivattu kalkkunan kaula                                  |
+|         530 | Kuivattu naudanliha 1kg                                   |
+|         741 | Kuivattu naudanliha 5kg                                   |
+|         378 | Lammas - 'Daily-Dog' Cuisine 1kg                          |
+|         565 | Lammas - 'Daily-Dog' Cuisine 5kg                          |
+|         381 | Lammas - 'Daily-Dog' Cuisine tölkki 370g                  |
+|         681 | Lampaan luut 2kg                                          |
+|         556 | Lohi-mix 500g                                             |
+|         460 | Luminous - valopanta                                      |
+|         439 | Maha - lammas ja peura Daily-Dog Cuisine tölkki 370g      |
+|         394 | Merilevä jauhe 250g                                       |
+|         395 | Merilevä tabletti 100 tablettia                           |
+|         740 | Mhims valmisateria 375g                                   |
+|         616 | Murren Alkuvoima Hellä +Plus 1kg                          |
+|         617 | Murren Alkuvoima Junior +Plus 1kg                         |
+|         614 | Murren Alkuvoima Kanafasaani 1kg                          |
+|         613 | Murren Alkuvoima Lammas & Riisi 1kg                       |
+|         612 | Murren Alkuvoima Lammas 1kg                               |
+|         615 | Murren Alkuvoima Peura +Plus 1kg                          |
+|         618 | Murren Alkuvoima Vege 200g                                |
+|         619 | Murren Alkuvoima Vire 200g                                |
+|         240 | Murren koulutusmakupalat 500g                             |
+|         647 | MUSH B.A.R.F Vaisto - Kalkkuna-kana-poro-ateria 800g      |
+|         649 | MUSH B.A.R.F Vaisto - Nauta-kalkkuna-lohi-ateria 800g     |
+|         645 | MUSH B.A.R.F Vaisto - Nauta-poro-lohi-ateria 800g         |
+|         651 | MUSH B.A.R.F Vaisto - Nauta-sika-kana-ateria 800g         |
+|         646 | MUSH B.A.R.F Vaisto - Sika-kalkkuna-kana-ateria 800g      |
+|         648 | MUSH B.A.R.F Vaisto - Sika-kana-lammas-ateria 800g        |
+|         650 | MUSH B.A.R.F Vaisto - Sika-nauta-lohi-ateria 800g         |
+|         794 | Mush CAT Kana-Kalkkuna-Sika annospullat 800g              |
+|         795 | Mush CAT Nauta-Sika annospullat 800g                      |
+|         791 | Mush Kalkkunan luinen  jauheliha annospullat 800g         |
+|         372 | Mush Kalkkunan luuton jauheliha 500g                      |
+|         662 | Mush Kanan kokonainen kivipiira 500g                      |
+|         793 | Mush Kanan luinen jauheliha annospullat 800g              |
+|         673 | Mush Kanan selkä ja siivet jauhettu 500g                  |
+|         545 | Mush Kanan sydän kokonainen 500g                          |
+|         604 | Mush Lampaan lihaluujauheliha 500g                        |
+|         291 | Mush Naudan lihainen rasva 500g                           |
+|         792 | Mush Naudan maha annospullat 800g                         |
+|         550 | Mush Poron lihaluujauheliha 500g                          |
+|         585 | Mush Poron luut 1,5kg                                     |
+|         583 | Mush Poron luuton jauheliha 500g                          |
+|         557 | Mush Riista-mix 500g                                      |
+|         480 | Natural Menu Chicken 1,5kg                                |
+|         531 | Natural Menu Chicken 5kg                                  |
+|         481 | Natural Menu Lamb 5kg                                     |
+|         564 | Naudan luut 1,5kg                                         |
+|         502 | Naudan maha 800g                                          |
+|         782 | Naudan palloniveliä 5kg                                   |
+|         761 | Naudan putkiluita 7kg                                     |
+|         590 | Naudan rustoluita 1,5kg                                   |
+|         781 | Naudan ydinluita 12kg                                     |
+|         586 | Nauta-mix 500g                                            |
+|         233 | Neu 1kg                                                   |
+|         360 | Neu 500g pötkö                                            |
+|         311 | NeuP 1kg                                                  |
+|         693 | Non-Stop - Kakkapussikotelo                               |
+|         685 | Non-Stop - Polar panta, L                                 |
+|         684 | Non-Stop - Polar panta, M                                 |
+|         683 | Non-Stop - Polar panta, S                                 |
+|         682 | Non-Stop - Polypro säädettävä panta, yksi koko            |
+|         686 | Non-Stop - Safe panta 40cm                                |
+|         687 | Non-Stop - Safe panta 45cm                                |
+|         688 | Non-Stop - Safe panta 50cm                                |
+|         689 | Non-Stop - Safe panta 55cm                                |
+|         691 | Non-Stop - Solid tossut L                                 |
+|         692 | Non-Stop - Solid tossut XL                                |
+|         690 | Non-Stop - Vahva talutin 3m                               |
+|         448 | Ohrasuurimo 1kg                                           |
+|         388 | Osmopet 250g                                              |
+|         513 | Osteomax-K 170 tbl                                        |
+|         413 | Paloletkupatukka vingulla M                               |
+|         535 | Patento Pet sports kaulapanta L 49-59cm                   |
+|         536 | Patento Pet sports kaulapanta XL 61-71cm                  |
+|         315 | PensionNeu 1kg                                            |
+|         314 | PentuNeu 1kg                                              |
+|         361 | PentuNeu 500g pötkö                                       |
+|         454 | Peura - &#8216;Good-Dog' makupalat 85,2g                  |
+|         380 | Peura - 'Daily-Dog' Cuisine 1kg                           |
+|         440 | Peura - 'Daily-Dog' Cuisine 5g                            |
+|         438 | Peura - 'Daily-Dog' Cuisine tölkki 370g                   |
+|         453 | Peura ja kala Daily-Dog Cuisine tölkki 370g               |
+|         512 | Pii-Pet 100 tbl                                           |
+|         746 | Planet Pet - Training Stick - nuoltava herkku, kana 50ml  |
+|         524 | Planet Pet ankansuikaleet 100g                            |
+|         636 | Planet Pet Kalkkuna- ja ohramakkara 800g                  |
+|         635 | Planet Pet Kana,- riisi- ja porkkanamakkara 800g          |
+|         523 | Planet Pet kanafile koirille 100g                         |
+|         610 | Planet Pet kanakierre 100g                                |
+|         744 | Planet Pet kanapullat 100g                                |
+|         527 | Planet Pet kylmäkuivattu kala 30g                         |
+|         525 | Planet Pet kylmäkuivattu kananrinta 30g                   |
+|         526 | Planet Pet kylmäkuivattu naudan maksa 30g                 |
+|         634 | Planet Pet Lammas- ja riisimakkara 800g                   |
+|         694 | Planet Pet lammasviipaleet 80g                            |
+|         743 | Planet Pet lihapullat 100g                                |
+|         745 | Planet Pet lohipullat 100g                                |
+|         637 | Planet Pet Naudanliha-, riisi- ja kasvismakkara 800g      |
+|         640 | Planet Pet Ravintoöljy basic 250ml                        |
+|         641 | Planet Pet Ravintoöljy basic 500ml                        |
+|         567 | Planet Pet tonnikalapalat 100g                            |
+|         532 | Planet Pet turkki & tassupyyhkeet 60kpl                   |
+|         528 | Planet Pet täysliha kanatikku 12g, 18cm                   |
+|         529 | Planet Pet täysliha lammastikku 12g, 18cm                 |
+|         571 | Planet Pet täysliha lihatikku 12g, 18cm                   |
+|         766 | Possun sorkkia 2kpl                                       |
+|         485 | Professorin A&M Sinkki 250 tabl                           |
+|         433 | Purr & Simple Pellet Formula kissanhiekka 3,63kg          |
+|         455 | Purr&Simple Kwik Klump Formula 9,07 kg                    |
+|         401 | Puunkuorijauhe 200g                                       |
+|         238 | Riisikana 1kg                                             |
+|         239 | Riisilohi 1kg                                             |
+|         396 | Sekavihannes 100 tablettia                                |
+|         403 | Selja-nokkosuute 125ml                                    |
+|         669 | Sian luumurske 500g                                       |
+|         392 | Sian luut 1,5kg                                           |
+|         253 | Sian sisäelinseos 500g                                    |
+|         549 | Sian sydän jauhettu 500g                                  |
+|         572 | Sika-mix 500g                                             |
+|         477 | Sika-nauta jauheliha 10kg levyinä                         |
+|         667 | Sika-nauta jauheliha 10kg, 10x1kg                         |
+|         470 | Sika-nauta jauheliha 1kg                                  |
+|         493 | Spelthiutale 1kg                                          |
+|         313 | TattariNeu 1kg                                            |
+|         436 | Tattarisuurimo 1kg                                        |
+|         570 | Teräskuppi 2,8l                                           |
+|         332 | Teräskuppi 3 l                                            |
+|         407 | Teräsrekku 700g                                           |
+|         622 | Vadelmanlehti 100 tablettia                               |
+|         397 | Valkosipuli-kreikanherne 100 tablettia                    |
+|         428 | Valkosipuli-kreikanherne 500 tablettia                    |
+|         509 | Vatsan Woima Nokkos-mustikkapuriste 100kpl                |
+|         518 | Virbac hammastahna koirille 70g                           |
+|         517 | Virbac Kit koirille hammasharjat + tahna 70g              |
+|         574 | Virbac Nutri-Plus gel 120g                                |
+|         519 | Virbac sormiharja koirille                                |
+|         514 | Vitamar 1000, 100 kaps                                    |
+|         237 | Vogel 1kg                                                 |
+|         312 | VogelPeruna 1kg                                           |
+|         759 | Vom og Hundemat Broileri, 1kg                             |
+|         756 | Vom og Hundemat koiranruoka Junior, 1kg                   |
+|         755 | Vom og Hundemat koiranruoka Junior, 500g                  |
+|         757 | Vom og Hundemat koiranruoka Junior, 5kg                   |
+|         754 | Vom og Hundemat koiranruoka lohella, 1kg                  |
+|         753 | Vom og Hundemat koiranruoka lohella, 500g                 |
+|         779 | Vom og Hundemat koiranruoka lohella, 5kg                  |
+|         758 | Vom og Hundemat koiranruoka Sprint, 1kg                   |
+|         749 | Vom og Hundemat koiranruoka, 1kg                          |
+|         751 | Vom og Hundemat koiranruoka, 5 x 100g                     |
+|         750 | Vom og Hundemat koiranruoka, 500g                         |
+|         752 | Vom og Hundemat koiranruoka, 5kg                          |
+|         780 | Vom og Hundemat Sprint, 5kg                               |
+|         400 | Vuohenjuuri-valeriana 100 tablettia                       |
+|         432 | ZiwiPeak Lammas - 'Daily-Cat' Cuisine tölkki 170g         |
+|         582 | ZiwiPeak Peura - 'Daily Cat' Cuisine 170g                 |
+|         431 | ZiwiPeak Peura ja kala - 'Daily-Cat' Cuisine tölkki 170g  |
++-------------+-----------------------------------------------------------+
+261 rows in set (0.00 sec)
+
+Unavailable packed:
+
++---+------------------------------+----+--------------------------------------+--+----+
+| id|name                          |_id |name_packed                         |pack|king|
++---+------------------------------+----+--------------------------------------+--+----+
+|222|Aktiivi-Puhti 800g pötkö      |217 |Aktiivi-Puhti ltk, 14 pötköä          |14|0.07|
+|244|Broilerin kauloja 2kg         |194 |Broilerin kauloja 8 kg                | 4|0.25|
+|245|Broilerin siipiä 2kg          |195 |Broilerin siipiä 8 kg                 | 4|0.25|
+|221|Hevos-Puhti 1 kg              |220 |Hevos-Puhti ltk, 14 pussia            |14|0.07|
+|300|Hirven rustot ja selkäluut 1kg|299 |Hirven rustot ja selkäluut 7kg        | 7|0.14|
+|224|Kana-Puhti 800g pötkö         |219 |Kana-Puhti ltk, 14 pötköä             |14|0.07|
+|303|Luumurske noin 600g           |329 |Luumurske 10kg                        |15|0.06|
+|658|Naudan jauheliha 2kg          |659 |Naudan jauheliha 10kg, 5x2kg          | 5|0.20|
+|472|Naudan jauheliha 800g         |473 |Naudan jauheliha ltk 14 pötköä, 11,2kg|14|0.07|
+|212|Naudan palviluu puolikas 1kpl |212 |Naudan palviluu puolikas 1kpl         | 0|0.06|
+|429|Naudan putkiluu (savustettu)  |429 |Naudan putkiluu (savustettu)          | 0|0.03|
+|284|Poron lihaluujauheliha n. 600g|285 |Poron lihaluujauheliha 10 kg          |15|0.06|
+|223|Saaristo-Puhti 800g pötkö     |218 |Saaristo-Puhti ltk, 14 pötköä         |14|0.07|
+|466|Sian jauheliha 800g           |467 |Sian jauheliha ltk 14 pötköä, 11,2kg  |14|0.07|
+|251|Ydinluu 1kpl                  |209 |Ydinluu kokonainen 20 kg              | 5|0.20|
++---+------------------------------+----+--------------------------------------+--+----+
+15 rows in set (0.00 sec)
+
+Unavailable unpacked (267):
+
++-------------+---------------------------------------------------+
+| products_id | name                                              |
++-------------+---------------------------------------------------+
+|         389 | Active 25/17, 20kg                                |
+|         205 | ADE-liuos 1l                                      |
+|         628 | AK - perunakana - valkosipuli 1kg                 |
+|         322 | ArthroRegén 160tbl                                |
+|         393 | As-3Plus 650g                                     |
+|         271 | AuriClean 125ml                                   |
+|         446 | B-liuos 100ml                                     |
+|         451 | B-liuos 1l                                        |
+|         708 | Back on Track hevosen selänlämmitin 100x100cm     |
+|         776 | Back on Track jalkasuoja M 15x12cm                |
+|         707 | Back on Track koiran kinnersuoja M pari           |
+|         769 | Back on Track koiranloimi 40                      |
+|         711 | Back on Track koiranloimi 46                      |
+|         704 | Back on Track koiranloimi 59                      |
+|         316 | Balance 20/8, 15kg                                |
+|         452 | BE-liuos 1l                                       |
+|         279 | Bestes Futter Barf Plus, täydennysrehu 2 kg       |
+|         268 | Bestes Futter Fenrier 2 kg                        |
+|         267 | Bestes Futter Meat Balls 1,5 kg                   |
+|         280 | Bestes Futter Sensitive, 15 kg                    |
+|         408 | Boomer pallo 4"                                   |
+|         193 | Broilerin jauheliha 10 kg                         |
+|         542 | Broilerin jauheliha 10kg levyinä                  |
+|         265 | Broilerin jauhelihaa n. 600g                      |
+|         307 | Broilerin jauhettu rasvaseos 1kg                  |
+|         642 | Broilerin kaula 1kg                               |
+|         764 | Broilerin kauloja 10kg                            |
+|         289 | Broilerin kivipiira kokonainen 10kg               |
+|         290 | Broilerin kivipiira kokonainen n. 600g            |
+|         643 | Broilerin luuton jauheliha 2kg                    |
+|         597 | Broilerin luuton jauheliha 500g                   |
+|         306 | Broilerin maksa jauhettu 500g                     |
+|         598 | Broilerin maksa jauhettu 500g                     |
+|         351 | Broilerin maksa kokonainen 1kg                    |
+|         599 | Broilerin rasva jauhettu 500g                     |
+|         196 | Broilerin selkärankoja 6 kg                       |
+|         580 | Broilerin siipiä 15kg                             |
+|         568 | Broilerin siipiä 8kg                              |
+|         197 | Broilerin siipiä jauhettuna 5 kg                  |
+|         247 | Broilerin siipiä jauhettuna 500g                  |
+|         198 | Broilerin sisäelinseos 5 kg                       |
+|         305 | Broilerin sydän kokonainen 10kg                   |
+|         288 | Broilerin sydän kokonainen n. 600g                |
+|         445 | Bull's stick paloja 200g                          |
+|         387 | Condros 220g                                      |
+|         424 | ContrAcarPet                                      |
+|         325 | Culinesse 3kg                                     |
+|         419 | Doxtasy namipalapussi, maastoväri                 |
+|         417 | Doxtasy namipalapussi, musta                      |
+|         418 | Doxtasy namipalapussi, pääkallo                   |
+|         420 | Doxtasy namipalapussi, skottiruutu-beige          |
+|         358 | Efa-Tabs Forte 200 kapselia                       |
+|         324 | EmuPlus 130ml, hoitovoide                         |
+|         364 | Family 29/17, 15kg                                |
+|         427 | Family 29/17, 2kg                                 |
+|         275 | Festival 26/16, 15 kg                             |
+|         276 | Festival 26/16, 4 kg                              |
+|         581 | FitDog Energy-energiajuomajauhe 600g              |
+|         709 | Flexi Comfort Long 3                              |
+|         540 | Flying dog after drink palautusjuoma 1,5kg        |
+|         377 | Grizzly villin lohen öljy 1000ml                  |
+|         605 | Hanhen lihaluujauhelihaa 500g                     |
+|         349 | Hanhen rasva 1kg                                  |
+|         591 | HAUKKU Poron luuton jauheliha 500g                |
+|         592 | HAUKKU Poron mahalaukku 500g                      |
+|         593 | HAUKKU Poron putkiluita 3kg                       |
+|         607 | HAUKKU Poron rustoluita 3kg                       |
+|         443 | Heijastinliivi L                                  |
+|         442 | Heijastinliivi M                                  |
+|         404 | Helokkiöljy 100 kapselia                          |
+|         333 | Hevosen jauhelihaa 1kg                            |
+|         621 | Hevosen jauhelihaa 2kg                            |
+|         595 | Hevosen jauhelihaa n. 1,7-2kg                     |
+|         308 | Hevosen lihaisa rasva 1kg                         |
+|         215 | Hevosen luut 1 kg                                 |
+|         620 | Hevosen paistisuikale 500g                        |
+|         589 | Hevosen palaliha 10kg ltk, siivuina               |
+|         596 | Hevosen palaliha 20kg                             |
+|         350 | Hevosen sisäelinseos 1kg                          |
+|         664 | Hevosen sisäelinseos 1kg                          |
+|         444 | High Energy 31/22, 15kg                           |
+|         367 | Hirven putket ja nivelet (ajanvieteluut) 1kg      |
+|         789 | HURJA Broilerin kivipiiroja 400g                  |
+|         732 | HURJA Broilerin lihaluujauheliha 500g             |
+|         720 | HURJA Broilerin luuton jauheliha 16x400g, 6,4kg   |
+|         719 | HURJA Broilerin maksa jauhettu 200g               |
+|         717 | HURJA Broilerin sisäelinseos 200g                 |
+|         735 | HURJA Kalkkunan luuton jauheliha 500g             |
+|         737 | HURJA Kanamix 500g                                |
+|         726 | HURJA Naudan jauheliha 16x400g, 6,4kg             |
+|         727 | HURJA Naudan palaliha 26x400g, 10,4kg             |
+|         723 | HURJA Poron luuton jauheliha 500g                 |
+|         700 | Hyperion makuualusta 1x55cm                       |
+|         701 | Hyperion makuualusta 1x75cm                       |
+|         270 | HypoShampoo 200ml                                 |
+|         208 | Häränhännät 5 kg                                  |
+|         491 | Jauhettu lohi 13,5kg, 27 pötköä                   |
+|         334 | Jauhettua hanhen siipeä 1kg                       |
+|         274 | Junior 26/13,5, 20kg                              |
+|         416 | Juuttipallo                                       |
+|         382 | Kala ja Peura - 'Good Dog' makupalat 85,2g        |
+|         304 | Kalkkunamassa 1kg                                 |
+|         609 | Kalkkunan kaula 5kg                               |
+|         600 | Kalkkunan kaula jauhettu 500g                     |
+|         200 | Kalkkunan koipia 2 kpl / 2,5-3 kg                 |
+|         366 | Kalkkunan luinen jauheliha 13,5kg                 |
+|         520 | Kalkkunan luuton jauheliha 13,5kg                 |
+|         355 | Kalkkunan rasvaseos 1 kg                          |
+|         201 | Kalkkunan siipiä 3 kg                             |
+|         488 | Kalkkunariisi 10kg                                |
+|         537 | Kanasuikaleet 1kg                                 |
+|         510 | Karpalon Woima Nokkoskarpalojauhe 50g             |
+|         435 | Kaurasuurimo 1kg                                  |
+|         587 | Kennelmix 800g                                    |
+|         327 | Kids 25/12, 15kg                                  |
+|         362 | Kids 25/12, 4kg                                   |
+|         702 | Kierretikkuja 100kpl                              |
+|         425 | Kissojen  barf kana-ateria 300g                   |
+|         437 | Kissojen barf kala-kalkkuna ateria 300g           |
+|         369 | Koiran luonnollinen ruokinta                      |
+|         611 | Kokonainen pakastekana n. 1kg                     |
+|         543 | Kuivattu naudan henkitorvi n. 25cm                |
+|         501 | Kuivattu naudan päänahka 80cm                     |
+|         242 | Kuivattu naudanliha 2kg                           |
+|         499 | Kuivattua hevosen lihasuikaleita 100g             |
+|         310 | Kuivattua naudan keuhkoa 100g                     |
+|         243 | Kuivattua naudan maksaa 100g                      |
+|         500 | Kuivattua peuran sydäntä 100g                     |
+|         423 | Kuivatut kanankaulat 200g                         |
+|         260 | Kuminen training ball small                       |
+|         281 | Kurkkutorvet n. 600g                              |
+|         301 | Lamb&Rice 21/11, 15kg                             |
+|         385 | Lammas - 'Good Dog' makupalat 85,2g               |
+|         202 | Lampaan lihaisa rasva 1 kg                        |
+|         594 | Lampaan lihaluujauheliha 500g                     |
+|         216 | Lampaan luita 1 kg                                |
+|         633 | Lampaan luuton jauheliha 1kg                      |
+|         383 | Lampaan maksa - 'Good Dog' makupalat 85,2g        |
+|         631 | Lampaan rasvapala 500g                            |
+|         606 | Lampaan sisäelinseos 500g                         |
+|         534 | Lampaan torvi 1kpl                                |
+|         326 | Leger 3kg                                         |
+|         559 | Liha-ateria 500g                                  |
+|         668 | Lihainen rasva 500g                               |
+|         287 | Lihainen rasva 5kg                                |
+|         665 | Lihaluu-ateria 500g                               |
+|         577 | Lihapuuro 10kg                                    |
+|         703 | Lihaseos 2kg                                      |
+|         204 | Lohi 5 kg                                         |
+|         547 | Luumurske 500g                                    |
+|         185 | Maksa, jauhettu 5 kg                              |
+|         252 | Maksa, jauhettu 500g                              |
+|         328 | Minette 3kg                                       |
+|         479 | Minipeitto 50x68                                  |
+|         390 | Miniwell 27/16, 4kg                               |
+|         405 | Mirra Coat O3 jauhe 450g                          |
+|         447 | Musch Original 1kg                                |
+|         373 | Musch Underdog fat booster 2,5kg                  |
+|         374 | Musch Underdog meat mix 2,5kg                     |
+|         511 | Mustikan Woima Nokkosmustikkajauhe 50g            |
+|         562 | Mäyräkoira verkkoloimi koko M                     |
+|         496 | Naksutin                                          |
+|         421 | Naksutin käsirenkaalla                            |
+|         371 | Naudan henkitorvipaloja 100g                      |
+|         490 | Naudan jauheliha 10kg                             |
+|         189 | Naudan jauheliha 10kg                             |
+|         261 | Naudan jauheliha n. 600g                          |
+|         450 | Naudan jänneluu (savustettu)                      |
+|         679 | Naudan luita 10kg                                 |
+|         192 | Naudan maha 10 kg                                 |
+|         263 | Naudan mahaa n. 600g                              |
+|         191 | Naudan palaliha 10 kg                             |
+|         498 | Naudan palaliha 1kg                               |
+|         657 | Naudan palaliha 2kg                               |
+|         608 | Naudan palaliha 500g                              |
+|         354 | Naudan pallonivel 1 kpl                           |
+|         678 | Naudan pallonivel 5kg                             |
+|         680 | Naudan putkiluut 12kg                             |
+|         632 | Naudan putkiluut 2kg                              |
+|         748 | Naudan putkiluut n. 2kg                           |
+|         309 | Naudan rasva 5kg                                  |
+|         551 | Naudan rustoluita 2kg                             |
+|         663 | Naudan rustoluita 5kg                             |
+|         422 | Naudanlihakuutiot 100g                            |
+|         386 | Nauta - 'Good Dog' makupalat 454g                 |
+|         384 | Nauta - 'Good Dog' makupalat 85,2g                |
+|         560 | Nauta-spelt-kaurapuuro 10kg                       |
+|         317 | Omegabalans lohiöljy 250ml                        |
+|         363 | Optiness 22/12, 15kg                              |
+|         320 | Oroclear 100ml                                    |
+|         410 | Paloletku patukka kahvalla M                      |
+|         414 | Paloletkupatukka vingulla L                       |
+|         412 | Paloletkupatukka vingulla S                       |
+|         318 | Pectbalans 180g                                   |
+|         241 | Pellava-Musti öljy 500ml                          |
+|         321 | PetDolor 20ml                                     |
+|         579 | Planet Pet blackie peti 90x70cm                   |
+|         521 | Planet Pet Browny makuualusta 90 x 60cm           |
+|         522 | Planet Pet Browny peti 75 x 58cm                  |
+|         566 | Planet Pet kanakiekko 100g                        |
+|         269 | PlantaLaurin 100ml                                |
+|         676 | Possun jauheliha 2kg                              |
+|         286 | Possun jauhettua sydäntä n. 600g                  |
+|         296 | Possun kuivattua maksaa 100g                      |
+|         294 | Possun kuivattua munuaista 100g                   |
+|         295 | Possun kuivattua sydäntä 100g                     |
+|         603 | Possun kylkiluita 2kg                             |
+|         660 | Possun palaliha 2kg                               |
+|         653 | Possun palaliha 500g                              |
+|         297 | Possun palaliha n. 600g                           |
+|         292 | Possun saparo paloja 200g                         |
+|         266 | Possun selkärankaa  1 kg                          |
+|         677 | Possun sorkat 5kg                                 |
+|         249 | Possunsorkat 1kpl                                 |
+|         576 | Postikulut                                        |
+|         699 | PPS Conduroy Makuutyyny 90 x 60 x 11cm            |
+|         250 | Putkiluu 1kpl                                     |
+|         210 | Putkiluut ilman niveliä 14 kg                     |
+|         494 | Puuroriisi 1kg                                    |
+|         199 | Raakaa kanamassaa 8 kg                            |
+|         272 | Regular 25/15, 20kg                               |
+|         554 | Riisi-liha-ateria 500g                            |
+|         666 | Riista-ateria 500g                                |
+|         207 | Rustoluut 5 kg                                    |
+|         563 | Sadeloimi koko 70cm                               |
+|         457 | SensiCat 3kg                                      |
+|         277 | SensiPlus 24/12, 15 kg                            |
+|         278 | SensiPlus 24/12, 4 kg                             |
+|         273 | Sensitive 25/13, 20kg                             |
+|         182 | Sian jauheliha 10 kg                              |
+|         264 | Sian jauhelihaa n. 600g                           |
+|         370 | Sian jättihäntäpalat 200g                         |
+|         368 | Sian keuhkoa 100g                                 |
+|         293 | Sian korvasuikaleita 100g                         |
+|         183 | Sian kurkkutorvet 10 kg                           |
+|         602 | Sian maksa jauhettu 500g                          |
+|         184 | Sian palaliha 10 kg                               |
+|         391 | Sian rintarustot 6kg                              |
+|         187 | Sian selkärankaa 10kg                             |
+|         186 | Sian sisäelinseos 5 kg                            |
+|         456 | Sian sydän kokonainen 1 kpl                       |
+|         497 | Siankorva 100kpl                                  |
+|         449 | Sianlihasuikaleita 100g                           |
+|         206 | Siansorkat 8 kg                                   |
+|         508 | Sielun Woima Nokkos-siemenpuriste 100kpl          |
+|         716 | Siivekäs 2kg                                      |
+|         190 | Sika-nauta jauheliha 10 kg                        |
+|         348 | Sika-nauta jauheliha 2,5kg                        |
+|         675 | Sika-nauta jauheliha 2kg                          |
+|         471 | Sika-nauta jauheliha ltk 10 pötköä, 10kg          |
+|         262 | Sika-nauta jauheliha n. 600g                      |
+|         578 | Sport Glutamine 100g                              |
+|         487 | Sport Glutamine 400g                              |
+|         507 | Tassun Woima nokkosjauhe 100g                     |
+|         257 | Teline 2:lle 1,75 l kupille                       |
+|         411 | Teräskuppi 0,75l                                  |
+|         258 | Teräskuppi 1,75 l                                 |
+|         569 | Teräskuppi 4l                                     |
+|         259 | Teräskuppi 5 l                                    |
+|         674 | Underdog Meat-mix 10 x 2,5kg                      |
+|         629 | Underdog sika-nauta 10 x 2,5kg                    |
+|         255 | Vihreä kasvisssose 5kg                            |
+|         515 | Vitamar Omeaga-3 + ADE 100 kaps                   |
+|         630 | Voima Chicken 25kg (10 x 2,5kg)                   |
+|         323 | VulnoPlant ihospray                               |
+|         652 | Ydinluu kokonainen 10kg                           |
+|         430 | ZiwiPeak Peura ja kala - 'Daily-Ca't Cuisine 400g |
++-------------+---------------------------------------------------+
+267 rows in set (0.01 sec)
