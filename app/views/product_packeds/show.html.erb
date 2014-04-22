@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @product_packed.id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @product_packed.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product_packed.description %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @product_packed.url %>
+</p>
+
+<p>
+  <strong>Quantity packed:</strong>
+  <%= @product_packed.quantity_packed %>
+</p>
+
+<p>
+  <strong>Quantity unpacked:</strong>
+  <%= @product_packed.quantity_unpacked %>
+</p>
+
+<p>
+  <strong>Price packed:</strong>
+  <%= @product_packed.price_packed %>
+</p>
+
+<p>
+  <strong>Price unpacked:</strong>
+  <%= @product_packed.price_unpacked %>
+</p>
+
+<%= link_to 'Edit', edit_product_packed_path(@product_packed) %> |
+<%= link_to 'Back', product_packeds_path %>

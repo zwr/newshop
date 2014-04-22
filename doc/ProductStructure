@@ -9,6 +9,8 @@ price
 
 rails generate scaffold Product id:integer name:string description:string url:string quantity:decimal price:decimal --skip-migrations
 
+rails generate scaffold ProductPacked id:integer name:string description:string url:string quantity_packed:decimal quantity_unpacked:decimal price_packed:decimal price_unpacked:decimal --skip-migrations
+
 
 select products.products_id, products_name, products_description, products_url, 
        products_viewed, products_quantity, products_image, products_price,
