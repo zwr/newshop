@@ -8,11 +8,11 @@ For now, you should have done the following:
 * Installed RubyGems 2.2. (which RVM should have done for you).
 * Installed and started MongoDB. I did this on Ubuntu:
 
-    sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
-    echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
-    sudo apt-get update
-    sudo apt-get install mongodb-org
-    sudo service mongod start  # this you will do every time you need it!
+        sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+        echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
+        sudo apt-get update
+        sudo apt-get install mongodb-org
+        sudo service mongod start  # this you will do every time you need it!
     
 After cloning this, you should:
 
