@@ -25,7 +25,7 @@ String.class_eval do
 end
 
 puts (<<-OPEINING_PART)
-TopCategory = ProductCategory.new(:name => 'Main')
+TopCategory = Category.new(:name => 'Main')
 OPEINING_PART
 
 client = Mysql2::Client.new(
@@ -43,8 +43,18 @@ def create_childred(client, parent_id, parent_var)
       ORDER BY name
     QUERYCATEGORY
   rs.map do |row|
-    puts %Q\#{row['name'].underscore.gsub(/[ \/\-äöåÄÖÅ.]+/,'_')} = #{parent_var}.child_product_categories.build(:id => '#{row['id']}', :name => '#{row['name']}')\
-    create_childred client, row['id'], row['name'].underscore.gsub(/[ \/\-äöåÄÖÅ.]+/,'_')
+    child_name = row['name'].underscore.gsub(/[ \/\-äöåÄÖÅ.]+/,'_')
+    puts %Q\#{child_name} = #{parent_var}.child_categories.build(:id => '#{row['id']}', :name => '#{row['name']}')\
+
+    client.query("select * from products_to_categories where categories_id = #{row['id']}").map do |row2|
+      #Some products are disabled and will not exist in the Products collection!
+      if client.query("select * from products where products_id = #{row2['products_id']} and products_status = 1").count == 1
+        puts %Q\#{child_name}.category_products.new(:product_id => '#{row2['products_id']}', :association => '#{row2['use_this']}')\
+      else
+        puts "# disabled product #{row2['products_id']}"
+      end
+    end
+    create_childred client, row['id'], child_name
   end
 end
 
