@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'main/get'
+  root 'main#get'
+
   resources :product_packeds
 
   resources :products
