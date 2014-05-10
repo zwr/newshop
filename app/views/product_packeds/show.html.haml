@@ -1,0 +1,28 @@
+%p#notice= notice
+%p
+  %strong Id:
+  = @product_packed.id
+%p
+  %strong Name:
+  = @product_packed.name
+%p
+  %strong Description:
+  = @product_packed.description
+%p
+  %strong Url:
+  = @product_packed.url
+%p
+  %strong Quantity packed:
+  = @product_packed.quantity_packed
+%p
+  %strong Quantity unpacked:
+  = @product_packed.quantity_unpacked
+%p
+  %strong Price packed:
+  = @product_packed.price_packed
+%p
+  %strong Price unpacked:
+  = @product_packed.price_unpacked
+= link_to 'Edit', edit_product_packed_path(@product_packed)
+|
+\#{link_to 'Back', product_packeds_path}
