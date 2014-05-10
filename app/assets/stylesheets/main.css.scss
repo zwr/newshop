@@ -1,3 +1,124 @@
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#main_wrapper {
+  background-color: #f8ffd1;
+  margin: auto;
+  width: 900px;
+  vertical-align: top;
+  _border: 1px solid #cacaca;
+  }
+
+
+#header_wrapper {
+  background-color: #b3e009;
+  _padding-bottom: 10px;
+    
+  border-bottom-right-radius: 15px;
+  -moz-border-radius-bottomright: 15px;
+  border-bottom-left-radius: 15px;
+  -moz-border-radius-bottomleft: 15px;
+}
+
+
+#footer_wrapper {
+  background-color: #b3e009;
+  background-image: none;
+  padding: 0em 0em;
+  
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; 
+  }
+
+
+#nav_footer {
+  margin: auto;
+  padding: 0.5em 0em;
+  list-style-type: none;
+  text-align: center;
+  line-height: 1.5em;
+}
+#nav_footer li {
+  display:inline;
+}
+
+
+#nav_column_left{
+  width: 20%;
+  height: 100%;
+  vertical-align: top;
+}
+
+#nav_column_center{
+  width: 60%;
+  vertical-align: top;
+}
+
+#nav_column_right{
+  width: 20%;
+  height: 100%;
+  vertical-align: top;
+}
+
+#column_left{
+  
+}
+
+#column_center{
+
+}
+
+#column_right{
+
+}
+
+#column_center_title{
+  text-align: justify;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+#column_center_title_big{
+  font-size: x-large;
+}
+
+#column_center_content{
+  text-align: center;
+  font-size: large;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+#column_center_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box_title{
+  background-color: #b3e009;
+  font-size: large;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.box{
+
+}
+
+
+
+
+
+
+
+
