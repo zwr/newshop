@@ -1,4 +1,7 @@
+puts 'Seeding the catalog' unless Rails.env.test?
+Category.all.delete
 top_category = Category.new(:name => 'Main')
+top_category.id = '1'
 back_on_track = top_category.child_categories.build(:id => '91', :name => 'Back on Track')
 # disabled product 479
 # disabled product 562

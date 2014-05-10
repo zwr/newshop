@@ -1,5 +1,6 @@
-puts 'Seeding generic products'
-Product.create([
+puts 'Seeding generic products' unless Rails.env.test?
+Product.all.delete
+Product.create!([
   {
     id:           '389',
     name:         'Active 25/17, 20kg',
@@ -59,16 +60,6 @@ Product.create([
 
         ERITYISTÄ
         Säilytettävä valolta suojassa huoneenlämmössä.
-        DESC
-  },
-  {
-    id:           '628',
-    name:         'AK - perunakana - valkosipuli 1kg',
-    url:          '',
-    quantity:     0.0,
-    price:        0.30702E1,
-    description:  (<<-DESC.strip_heredoc),
-
         DESC
   },
   {
@@ -937,7 +928,7 @@ Product.create([
   },
   {
     id:           '598',
-    name:         'Broilerin maksa jauhettu 500g',
+    name:         'Broilerin maksa2 jauhettu 500g',
     url:          '',
     quantity:     0.0,
     price:        0.25439E1,
@@ -2484,7 +2475,7 @@ Product.create([
   },
   {
     id:           '664',
-    name:         'Hevosen sisäelinseos 1kg',
+    name:         'Hevosen sisäelinseos2 1kg',
     url:          '',
     quantity:     5.0,
     price:        0.0,
@@ -5388,7 +5379,7 @@ Product.create([
   },
   {
     id:           '490',
-    name:         'Naudan jauheliha 10kg',
+    name:         'Naudan jauheliha2 10kg',
     url:          '',
     quantity:     0.0,
     price:        0.265487E2,

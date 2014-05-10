@@ -1,4 +1,4 @@
-puts 'Seeding packed products'
+puts 'Seeding packed products' unless Rails.env.test?
 ProductPacked.create([
   {
     id:           '254',
