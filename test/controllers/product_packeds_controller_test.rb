@@ -2,7 +2,11 @@ require 'test_helper'
 
 class ProductPackedsControllerTest < ActionController::TestCase
   setup do
-    @product_packed = product_packeds(:one)
+    @product_packed = create(:product_packed)
+  end
+
+  teardown do
+    Product.all.delete
   end
 
   test "should get index" do
@@ -18,7 +22,7 @@ class ProductPackedsControllerTest < ActionController::TestCase
 
   test "should create product_packed" do
     assert_difference('ProductPacked.count') do
-      post :create, product_packed: { description: @product_packed.description, id: @product_packed.id, name: @product_packed.name, price_packed: @product_packed.price_packed, price_unpacked: @product_packed.price_unpacked, quantity_packed: @product_packed.quantity_packed, quantity_unpacked: @product_packed.quantity_unpacked, url: @product_packed.url }
+      post :create, product_packed: { description: @product_packed.description, name: @product_packed.name + 'x', price_packed: @product_packed.price_packed, price_unpacked: @product_packed.price_unpacked, quantity_packed: @product_packed.quantity_packed, quantity_unpacked: @product_packed.quantity_unpacked, url: @product_packed.url }
     end
 
     assert_redirected_to product_packed_path(assigns(:product_packed))

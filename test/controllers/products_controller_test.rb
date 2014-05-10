@@ -2,7 +2,11 @@ require 'test_helper'
 
 class ProductsControllerTest < ActionController::TestCase
   setup do
-    @product = products(:one)
+    @product = create(:product)
+  end
+
+  teardown do
+    Product.all.delete
   end
 
   test "should get index" do
@@ -16,9 +20,10 @@ class ProductsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create product" do
+  # Removed the id form the generated one
+  test "should create new product" do
     assert_difference('Product.count') do
-      post :create, product: { description: @product.description, id: @product.id, name: @product.name, price: @product.price, quantity: @product.quantity, url: @product.url }
+      post :create, product: { description: @product.description, name: @product.name + 'x', price: @product.price, quantity: @product.quantity, url: @product.url }
     end
 
     assert_redirected_to product_path(assigns(:product))
