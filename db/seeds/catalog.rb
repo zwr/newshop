@@ -1,5 +1,5 @@
-TopCategory = Category.new(:name => 'Main')
-back_on_track = TopCategory.child_categories.build(:id => '91', :name => 'Back on Track')
+top_category = Category.new(:name => 'Main')
+back_on_track = top_category.child_categories.build(:id => '91', :name => 'Back on Track')
 # disabled product 479
 # disabled product 562
 # disabled product 563
@@ -17,7 +17,7 @@ back_on_track.category_products.new(:product_id => '715', :association => '1')
 # disabled product 769
 # disabled product 776
 back_on_track.category_products.new(:product_id => '777', :association => '1')
-dorwest_herbs = TopCategory.child_categories.build(:id => '97', :name => 'Dorwest Herbs')
+dorwest_herbs = top_category.child_categories.build(:id => '97', :name => 'Dorwest Herbs')
 dorwest_herbs.category_products.new(:product_id => '394', :association => '1')
 dorwest_herbs.category_products.new(:product_id => '395', :association => '1')
 dorwest_herbs.category_products.new(:product_id => '396', :association => '1')
@@ -31,7 +31,7 @@ dorwest_herbs.category_products.new(:product_id => '403', :association => '1')
 # disabled product 404
 dorwest_herbs.category_products.new(:product_id => '428', :association => '1')
 dorwest_herbs.category_products.new(:product_id => '622', :association => '1')
-herkut = TopCategory.child_categories.build(:id => '108', :name => 'Herkut')
+herkut = top_category.child_categories.build(:id => '108', :name => 'Herkut')
 kala_herkut = herkut.child_categories.build(:id => '114', :name => 'Kala herkut')
 # disabled product 382
 kala_herkut.category_products.new(:product_id => '527', :association => '1')
@@ -92,12 +92,12 @@ possu_herkut.category_products.new(:product_id => '283', :association => '1')
 # disabled product 370
 # disabled product 449
 # disabled product 497
-herkut = TopCategory.child_categories.build(:id => '68', :name => 'Herkut')
+herkut = top_category.child_categories.build(:id => '68', :name => 'Herkut')
 # disabled product 242
 # disabled product 267
 # disabled product 268
 herkut.category_products.new(:product_id => '530', :association => '1')
-hoitotuotteet = TopCategory.child_categories.build(:id => '83', :name => 'Hoitotuotteet')
+hoitotuotteet = top_category.child_categories.build(:id => '83', :name => 'Hoitotuotteet')
 # disabled product 269
 # disabled product 270
 # disabled product 271
@@ -111,7 +111,7 @@ hoitotuotteet.category_products.new(:product_id => '517', :association => '1')
 hoitotuotteet.category_products.new(:product_id => '518', :association => '1')
 hoitotuotteet.category_products.new(:product_id => '519', :association => '1')
 hoitotuotteet.category_products.new(:product_id => '532', :association => '1')
-kissalle = TopCategory.child_categories.build(:id => '98', :name => 'Kissalle')
+kissalle = top_category.child_categories.build(:id => '98', :name => 'Kissalle')
 # disabled product 325
 # disabled product 326
 # disabled product 328
@@ -127,7 +127,7 @@ kissalle.category_products.new(:product_id => '575', :association => '1')
 kissalle.category_products.new(:product_id => '582', :association => '1')
 kissalle.category_products.new(:product_id => '794', :association => '1')
 kissalle.category_products.new(:product_id => '795', :association => '1')
-koiranmakkarat_ja_t_lkkiruoat = TopCategory.child_categories.build(:id => '100', :name => 'Koiranmakkarat ja tölkkiruoat')
+koiranmakkarat_ja_t_lkkiruoat = top_category.child_categories.build(:id => '100', :name => 'Koiranmakkarat ja tölkkiruoat')
 koiranmakkarat_ja_t_lkkiruoat.category_products.new(:product_id => '381', :association => '2')
 koiranmakkarat_ja_t_lkkiruoat.category_products.new(:product_id => '438', :association => '2')
 koiranmakkarat_ja_t_lkkiruoat.category_products.new(:product_id => '439', :association => '2')
@@ -138,7 +138,7 @@ koiranmakkarat_ja_t_lkkiruoat.category_products.new(:product_id => '635', :assoc
 koiranmakkarat_ja_t_lkkiruoat.category_products.new(:product_id => '636', :association => '1')
 koiranmakkarat_ja_t_lkkiruoat.category_products.new(:product_id => '637', :association => '1')
 koiranmakkarat_ja_t_lkkiruoat.category_products.new(:product_id => '740', :association => '1')
-kuivaruoat = TopCategory.child_categories.build(:id => '67', :name => 'Kuivaruoat')
+kuivaruoat = top_category.child_categories.build(:id => '67', :name => 'Kuivaruoat')
 bestes_futter = kuivaruoat.child_categories.build(:id => '87', :name => 'Bestes-Futter')
 # disabled product 267
 # disabled product 268
@@ -196,9 +196,9 @@ ziwi_peak.category_products.new(:product_id => '440', :association => '1')
 ziwi_peak.category_products.new(:product_id => '441', :association => '1')
 ziwi_peak.category_products.new(:product_id => '454', :association => '1')
 ziwi_peak.category_products.new(:product_id => '565', :association => '1')
-lahjakortti = TopCategory.child_categories.build(:id => '106', :name => 'Lahjakortti')
+lahjakortti = top_category.child_categories.build(:id => '106', :name => 'Lahjakortti')
 # disabled product 505
-lis_ravinteet = TopCategory.child_categories.build(:id => '104', :name => 'Lisäravinteet')
+lis_ravinteet = top_category.child_categories.build(:id => '104', :name => 'Lisäravinteet')
 lis_ravinteet.category_products.new(:product_id => '484', :association => '1')
 lis_ravinteet.category_products.new(:product_id => '485', :association => '1')
 lis_ravinteet.category_products.new(:product_id => '486', :association => '1')
@@ -212,7 +212,7 @@ lis_ravinteet.category_products.new(:product_id => '514', :association => '1')
 # disabled product 515
 # disabled product 578
 lis_ravinteet.category_products.new(:product_id => '775', :association => '1')
-luut = TopCategory.child_categories.build(:id => '65', :name => 'Luut')
+luut = top_category.child_categories.build(:id => '65', :name => 'Luut')
 broileri = luut.child_categories.build(:id => '76', :name => 'Broileri')
 # disabled product 194
 # disabled product 195
@@ -276,7 +276,7 @@ possu.category_products.new(:product_id => '392', :association => '2')
 # disabled product 603
 # disabled product 677
 possu.category_products.new(:product_id => '766', :association => '1')
-pakaste_lihat = TopCategory.child_categories.build(:id => '3', :name => 'Pakaste lihat')
+pakaste_lihat = top_category.child_categories.build(:id => '3', :name => 'Pakaste lihat')
 broileri = pakaste_lihat.child_categories.build(:id => '12', :name => 'Broileri')
 # disabled product 193
 # disabled product 194
@@ -509,7 +509,7 @@ possu.category_products.new(:product_id => '729', :association => '1')
 possu.category_products.new(:product_id => '730', :association => '1')
 possu.category_products.new(:product_id => '731', :association => '1')
 possu.category_products.new(:product_id => '762', :association => '1')
-pakaste_mixit = TopCategory.child_categories.build(:id => '66', :name => 'Pakaste mixit')
+pakaste_mixit = top_category.child_categories.build(:id => '66', :name => 'Pakaste mixit')
 hurja___ateriat = pakaste_mixit.child_categories.build(:id => '122', :name => 'HURJA - ateriat')
 hurja___ateriat.category_products.new(:product_id => '736', :association => '1')
 # disabled product 737
@@ -621,7 +621,7 @@ vom_og_hundemat.category_products.new(:product_id => '758', :association => '1')
 vom_og_hundemat.category_products.new(:product_id => '759', :association => '1')
 vom_og_hundemat.category_products.new(:product_id => '779', :association => '1')
 vom_og_hundemat.category_products.new(:product_id => '780', :association => '1')
-palautuminen_nesteytys = TopCategory.child_categories.build(:id => '119', :name => 'Palautuminen / nesteytys')
+palautuminen_nesteytys = top_category.child_categories.build(:id => '119', :name => 'Palautuminen / nesteytys')
 palautuminen_nesteytys.category_products.new(:product_id => '388', :association => '2')
 # disabled product 540
 palautuminen_nesteytys.category_products.new(:product_id => '541', :association => '2')
@@ -629,7 +629,7 @@ palautuminen_nesteytys.category_products.new(:product_id => '573', :association 
 palautuminen_nesteytys.category_products.new(:product_id => '574', :association => '2')
 # disabled product 581
 palautuminen_nesteytys.category_products.new(:product_id => '638', :association => '2')
-tarvikkeet = TopCategory.child_categories.build(:id => '70', :name => 'Tarvikkeet')
+tarvikkeet = top_category.child_categories.build(:id => '70', :name => 'Tarvikkeet')
 kirjat = tarvikkeet.child_categories.build(:id => '94', :name => 'Kirjat')
 # disabled product 369
 # disabled product 426
@@ -704,7 +704,7 @@ vetotarvikkeet.category_products.new(:product_id => '464', :association => '1')
 vetotarvikkeet.category_products.new(:product_id => '465', :association => '1')
 vetotarvikkeet.category_products.new(:product_id => '533', :association => '1')
 # disabled product 576
-viljat = TopCategory.child_categories.build(:id => '99', :name => 'Viljat')
+viljat = top_category.child_categories.build(:id => '99', :name => 'Viljat')
 viljat.category_products.new(:product_id => '434', :association => '1')
 # disabled product 435
 viljat.category_products.new(:product_id => '436', :association => '1')
@@ -713,7 +713,7 @@ viljat.category_products.new(:product_id => '492', :association => '1')
 viljat.category_products.new(:product_id => '493', :association => '1')
 # disabled product 494
 viljat.category_products.new(:product_id => '778', :association => '1')
-vitamiinit_ja_ljyt = TopCategory.child_categories.build(:id => '69', :name => 'Vitamiinit ja öljyt')
+vitamiinit_ja_ljyt = top_category.child_categories.build(:id => '69', :name => 'Vitamiinit ja öljyt')
 # disabled product 205
 # disabled product 241
 # disabled product 317
@@ -755,4 +755,4 @@ vitamiinit_ja_ljyt.category_products.new(:product_id => '772', :association => '
 vitamiinit_ja_ljyt.category_products.new(:product_id => '773', :association => '1')
 vitamiinit_ja_ljyt.category_products.new(:product_id => '774', :association => '1')
 vitamiinit_ja_ljyt.category_products.new(:product_id => '778', :association => '1')
-TopCategory.save
+top_category.save

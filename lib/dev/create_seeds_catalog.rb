@@ -25,7 +25,7 @@ String.class_eval do
 end
 
 puts (<<-OPEINING_PART)
-TopCategory = Category.new(:name => 'Main')
+top_category = Category.new(:name => 'Main')
 OPEINING_PART
 
 client = Mysql2::Client.new(
@@ -58,7 +58,7 @@ def create_childred(client, parent_id, parent_var)
   end
 end
 
-create_childred(client, "''", 'TopCategory')
+create_childred(client, "''", 'top_category')
 
 puts (<<-CLOSING_PART)
 TopCategory.save
