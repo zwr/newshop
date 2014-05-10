@@ -29,6 +29,9 @@ gem 'spring',        group: :development
 #Use FactoryGirl as mongoid does not know fixtures. Plus she is more cool I hear
 gem "factory_girl_rails", "~> 4.0"
 
+#Use haml to write erb right
+gem "haml"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
