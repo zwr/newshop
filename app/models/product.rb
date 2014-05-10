@@ -13,7 +13,9 @@ class Product
   field :price, type: Float
 
   validates :name, uniqueness: true, presence: true
-  validates :description, presence: true
+  # We had to disable following validation because some descriptions are
+  # empty. We will return it later.
+  # validates :description, presence: true
 
   def description_html
     Newshop::Application::Markdown.render(description).html_safe
