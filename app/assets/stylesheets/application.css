@@ -17,12 +17,3 @@
  *= require bootstrap
 
 
- body {
-  margin: 0;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 62.5%;
-  color: #000000;
-  background-color: #f8ffd1;
-  background-image: url(http://mironherkut.fi/includes/templates/mh_classic/images/background.jpg);
-  _background-repeat:no-repeat; 
-  }
