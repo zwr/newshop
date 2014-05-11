@@ -15,8 +15,7 @@ For now, you should have done the following:
         sudo service mongod start  # this you will do every time you need it!
 
 * In Osx
-	* Install brew
-	* Probably you want to do brew doctor before anything
+	* Install brew, probably you want to do brew doctor before anything
 		brew install mongodb
 	* Create database directory where you want to put the db and run it with
 		mongod --dbpath .
