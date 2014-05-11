@@ -1,0 +1,14 @@
+.box
+  #accordion.panel-group
+    .panel.panel-default
+      - for i in 1..categories
+        .panel-heading
+          .panel-title
+            %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{i}"}
+              = "Category #{i}"
+        .panel-collapse.collapse.out{:id => "collapse#{i}"}
+          .panel-body
+            .list-group
+              - for j in 1..items
+                %a.list-group-item{href: "#"} 
+                  = "Item #{j}"
