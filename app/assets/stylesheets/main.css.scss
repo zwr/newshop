@@ -38,27 +38,23 @@
 }
 
 
-#footer_wrapper {
-  background-color: #b3e009;
-  background-image: none;
-  padding: 0em 0em;
-  
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px; 
-  }
-
-
-#nav_footer {
-  margin: auto;
-  padding: 0.5em 0em;
-  list-style-type: none;
-  text-align: center;
-  line-height: 1.5em;
-}
-#nav_footer li {
-  display:inline;
+#collapse_footer {
+        text-align: center; /* Set this */
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
 }
 
+#footer_ul {
+    display: inline-block;
+    float: none;
+    margin: 0;
+}
+
+#footer_navbar{
+ background-color: #f8ffd1;
+}
 
 #nav_column_left{
   width: 20%;
