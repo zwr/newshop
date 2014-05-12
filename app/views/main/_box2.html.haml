@@ -7,8 +7,8 @@
             %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{i}"}
               = "Category #{i}"
         .panel-collapse.collapse.out{:id => "collapse#{i}"}
-          .panel-body
+          .panel-body.category-box
             .list-group
               - for j in 1..items
-                %a.list-group-item{href: "#"} 
+                %a.list-group-item.category-box{href: "#"} 
                   = "Item #{j}"
