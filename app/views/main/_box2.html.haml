@@ -6,9 +6,11 @@
           .panel-title
             %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{i}"}
               = "Category #{i}"
+            %span.badge.category-title-badge #{i}
         .panel-collapse.collapse.out{:id => "collapse#{i}"}
           .panel-body.category-box-panel
             .list-group.category-box-list
               - for j in 1..items
-                %a.list-group-item.category-box-item{href: "#"} 
+                %a.list-group-item.category-box-item{href: "#"}
+                  %span.badge #{j}
                   = "Item #{j}"
