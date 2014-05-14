@@ -2,6 +2,8 @@ class Category
   include Mongoid::Document
   recursively_embeds_many
   field :name, type: String
+  field :description, type: String
+  field :order, type: Integer
   embeds_many :category_products
 
   def products(ass_filter = nil)
