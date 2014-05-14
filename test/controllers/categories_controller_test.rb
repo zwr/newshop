@@ -2,7 +2,12 @@ require 'test_helper'
 
 class CategoriesControllerTest < ActionController::TestCase
   setup do
-    @category = categories(:one)
+    Category.all.delete
+    @category = create(:category)
+  end
+  
+  teardown do
+    Category.all.delete
   end
 
   test "should get index" do
