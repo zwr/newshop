@@ -18,4 +18,29 @@ FactoryGirl.define do
     packing             0.17E2
     description         'description'
   end
+  factory :subcategory1, class: Category do
+    id              '2'
+    name            'group1'
+    description     'desc'
+  end
+  factory :category do
+    id             '1'
+    name           'main'
+    description    'desc'
+    after(:build) do |top_category|
+      top_category.child_categories.new(name: 'group1', 
+                                        description: 'desc1')
+      g2 = top_category.child_categories.new(name: 'group2', 
+                                        description: 'desc2')
+        g2.child_categories.new(name: 'subgroup21', 
+                                description: 'desc21')
+        g2.child_categories.new(name: 'subgroup22', 
+                                description: 'desc22')
+        g2.child_categories.new(name: 'subgroup23', 
+                                description: 'desc23')
+      top_category.child_categories.new(name: 'group3', 
+                                        description: 'desc3')
+      # Need to add products to some categories! Must make the :product and some more!
+    end
+  end
 end
