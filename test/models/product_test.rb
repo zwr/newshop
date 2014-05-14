@@ -40,7 +40,7 @@ class ProductTest < ActiveSupport::TestCase
 
   test "should not create product without description" do
     assert_raises(Mongoid::Errors::Validations, 
-        "Did not fail when creating product without description") do
+        "Did not fail when creating product without description (KNOWN)") do
       Product.create!([
       { 
         id:           '389',
