@@ -27,4 +27,13 @@ class SeedTest < ActiveSupport::TestCase
     assert Category.all.count == 0, 
         "Should have dropped all categories but #{Product.all.count} were still there"
   end
+
+  def assert_products_here_and_sub(category)
+    category.products.each { |p| assert(!p.nil?, "category product list must not contain nils") }
+    category.child_categories.each { |c| assert_products_here_and_sub(c) }
+  end
+
+  test "should have products for all items in all categories" do
+    assert_products_here_and_sub(Category.first)
+  end
 end
