@@ -6,17 +6,19 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body#shop_body
-    #main_wrapper
-      = render('default/header')
-      #center_wrapper
-        %table#center_table
-          %tbody
-            %tr
-              %td#nav_column_left 
+    .container-fluid
+      .row
+        .col-md-2
+        .col-md-8
+          = render('default/header')
+          .container-fluid
+            .row
+              .col-md-3
                 = render 'default/boxes_left'
-              %td#nav_column_center 
+              .col-md-6
                 = yield
-              %td#nav_column_right 
+              .col-md-3
                 = render 'default/boxes_right'
-      = render('default/footer')
-    
+          = render('default/footer')
+        .col-md-2
+      
