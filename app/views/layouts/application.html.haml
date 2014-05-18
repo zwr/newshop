@@ -6,4 +6,17 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body#shop_body
-    = yield
+    #main_wrapper
+      = render('header')
+      #center_wrapper
+        %table#center_table
+          %tbody
+            %tr
+              %td#nav_column_left 
+                = render 'boxes_left'
+              %td#nav_column_center 
+                = yield
+              %td#nav_column_right 
+                = render 'boxes_right'
+      = render('footer')
+    
