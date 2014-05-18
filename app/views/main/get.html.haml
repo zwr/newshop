@@ -1,1 +1,6 @@
-= render 'center_main'
+#column_center
+  .jumbotron
+    = render 'center_main'
+/= render 'product', :p => Product.find(546)
+/= render 'products', :products = Category.first.child_categories[3].child_categories[1].products
+/= render 'subcategories', :subs = Category.first.child_categories
