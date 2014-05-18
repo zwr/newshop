@@ -8,17 +8,17 @@
   %body#shop_body
     .container-fluid
       .row
-        .col-md-2
-        .col-md-8
+        .col-sm-1
+        .col-sm-10
           = render('default/header')
           .container-fluid
             .row
-              .col-md-3
+              .col-sm-3#boxes_left
                 = render 'default/boxes_left'
-              .col-md-6
+              .col-sm-6#center_main
                 = yield
-              .col-md-3
+              .col-sm-3#boxes_right
                 = render 'default/boxes_right'
           = render('default/footer')
-        .col-md-2
+        .col-sm-1
       
