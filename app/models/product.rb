@@ -18,7 +18,7 @@ class Product
   # validates :description, presence: true
 
   def description_html
-    Newshop::Application::Markdown.render(description).html_safe
+    Newshop::Application::Markdown.render(description.gsub(/^\s+/,"")).html_safe
   end
 
   # Method show_price must be defined in every subclass and must
