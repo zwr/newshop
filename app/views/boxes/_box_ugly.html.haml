@@ -1,0 +1,15 @@
+#accordion.panel-group
+  .panel.panel-default
+    - Category.first.child_categories.each do |child_category|
+      .panel-heading
+        .panel-title
+          %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{child_category.id}"}
+            = child_category.name
+          %span.badge.category-title-badge #{child_category.products.length}
+      .panel-collapse.collapse.out{:id => "collapse#{child_category.id}"}
+        .panel-body.category-box-panel
+          .list-group.category-box-list
+            - child_category.products.each do |product|
+              %a.list-group-item.category-box-item{href: "#"}
+                %span.badge #{child_category.products.length}
+                = product.name
