@@ -1,11 +1,11 @@
 #column_right
-  #box_categories
-    = render('default/box', box_title: "Ostokori", box_name: "box_test.html.haml")
-  #box_categories
-    = render('default/box', box_title: "Tärkeät linkit", box_name: "box_test.html.haml")
-  #box_categories
-    = render('default/box', box_title: "Linkit", box_name: "box_test.html.haml")
-  #box_categories
-    = render('default/box', box_title: "Maksutavat", box_name: "box_test.html.haml")
-  #box_categories
-    = render('default/box', box_title: "Kielet", box_name: "box_test.html.haml")
+  .box_categories
+    = render('boxes/box', box_title: "Ostokori", box_name: "box_test")
+  .box_categories
+    = render('boxes/box', box_title: "Tärkeät linkit", box_name: "box_test")
+  .box_categories
+    = render('boxes/box', box_title: "Linkit", box_name: "box_test")
+  .box_categories
+    = render('boxes/box', box_title: "Maksutavat", box_name: "box_test")
+  .box_categories
+    = render('boxes/box', box_title: "Kielet", box_name: "box_test")
