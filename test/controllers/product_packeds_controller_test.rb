@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ProductPackedsControllerTest < ActionController::TestCase
+class Admin::ProductPackedsControllerTest < ActionController::TestCase
   setup do
     @product_packed = create(:product_packed)
   end

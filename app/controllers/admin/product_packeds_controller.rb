@@ -1,4 +1,4 @@
-class ProductPackedsController < ApplicationController
+class Admin::ProductPackedsController < Admin::AdminController
   before_action :set_product_packed, only: [:show, :edit, :update, :destroy]
 
   # GET /product_packeds

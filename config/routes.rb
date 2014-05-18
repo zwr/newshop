@@ -2,11 +2,10 @@ Rails.application.routes.draw do
   get 'main/get'
   root 'main#get'
 
-  resources :product_packeds
-
-  resources :products
-  
-  resources :categories do
+  scope '/admin', module: 'admin' do
+    resources :product_packeds, as: 'product_packeds'
+    resources :products, as: 'products'
+    resources :categories, as: 'categories'
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

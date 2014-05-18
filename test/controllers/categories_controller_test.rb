@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CategoriesControllerTest < ActionController::TestCase
+class Admin::CategoriesControllerTest < ActionController::TestCase
   setup do
     Category.all.delete
     @category = create(:category)
