@@ -29,11 +29,15 @@ class SeedTest < ActiveSupport::TestCase
   end
 
   def assert_products_here_and_sub(category)
+    counter = category.products.count
     category.products.each { |p| assert(!p.nil?, "category product list must not contain nils") }
-    category.child_categories.each { |c| assert_products_here_and_sub(c) }
+    category.child_categories.each { |c| counter += assert_products_here_and_sub(c) }
+    counter
   end
 
   test "should have products for all items in all categories" do
-    assert_products_here_and_sub(Category.first)
+    counter = assert_products_here_and_sub(Category.first)
+    assert counter == 326, 
+        "Products with multiple occurance should contain 326 occurances, but #{counter} were counted"
   end
 end

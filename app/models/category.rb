@@ -9,7 +9,10 @@ class Category
   def products(ass_filter = nil)
     list = Array.new
     category_products.each do | p |
-      list << p.product if (ass_filter.nil? or ass_filter == p.association)
+      begin
+        list << p.product if ass_filter.nil? or ass_filter == p.association
+      rescue Mongoid::Errors::DocumentNotFound
+      end
     end
     list
   end
