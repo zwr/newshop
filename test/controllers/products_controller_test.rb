@@ -51,4 +51,17 @@ class Admin::ProductsControllerTest < ActionController::TestCase
 
     assert_redirected_to products_path
   end
+
+  test "should get index in json format" do
+    get :index, :format => :json
+    assert_response :success
+    assert_not_nil assigns(:products)
+  end
+  
+  test "should get specified product in json format" do
+    get :show, :format => :json, id: @product
+    assert_response :success
+    received_product = JSON.parse(@response.body)
+    assert_equal @product.name, received_product['name']
+  end
 end

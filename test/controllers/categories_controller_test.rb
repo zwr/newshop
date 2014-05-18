@@ -51,4 +51,10 @@ class Admin::CategoriesControllerTest < ActionController::TestCase
 
     assert_redirected_to categories_path
   end
+
+  test "should get category in json format" do
+    get :index, :format => :json
+    assert_response :success
+    assert_not_nil assigns(:categories)
+  end
 end
