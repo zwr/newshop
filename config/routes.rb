@@ -63,4 +63,19 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  # Newshop:
+  # Routes design
+  
+  # Main /, equivalent to /main
+  # /catalog/product_or_category_slug - shows a product or category
+  # /herkut - focuses catalog box to the category and shows products in the main part
+  # /merileva_jauhe - focuses catalog on the 'default' category of the product and  shows product details
+  # /(page) - if 'page.html or 'page.md' exists, it is served (and parsed if needed)
+  # later:
+  #    /cart
+  #      /checkout
+  #    /profile 
+  #      /history
+  #      / history/(order id)
 end
