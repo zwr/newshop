@@ -1,0 +1,12 @@
+.container-fluid
+  .row
+    .col-md-4
+      %img.img-thumbnail{src: "http://placehold.it/200x150"}/
+    .col-md-8
+      %header.entry-header
+        %h2 
+        = product.name
+      %p 
+      = product.description_html
+      %p 
+      = product.price
