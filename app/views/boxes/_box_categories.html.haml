@@ -3,19 +3,16 @@
     - child_category ||= @main_category
     - child_category.child_categories.each do |sub_category| 
       - if sub_category.child_categories.length > 0
-        .panel-heading#catergory-box-heading
-          .panel-title
-            %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{sub_category.id}"}
-              = sub_category.name
-            %span.badge.category-title-badge #{sub_category.child_categories.length}
+        %a.list-group-item.category-box-item{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{sub_category.id}"}
+          = sub_category.name
+          %span.badge.category-title-badge #{sub_category.child_categories.length}
         .panel-collapse.collapse.out{:id => "collapse#{sub_category.id}"}
           .panel-body.category-box-panel
             .list-group.category-box-list
               = render('boxes/box_categories.html.haml', child_category: sub_category) 
       - else
         %a.list-group-item.category-box-item{href: "#"}
-          %span.badge.category-title-badge 2
-          /#{sub_category.products.length}
+          %span.badge.category-title-badge #{sub_category.products.length}
           = sub_category.name
 
 
