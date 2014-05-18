@@ -7,16 +7,16 @@
     = csrf_meta_tags
   %body#shop_body
     #main_wrapper
-      = render('header')
+      = render('default/header')
       #center_wrapper
         %table#center_table
           %tbody
             %tr
               %td#nav_column_left 
-                = render 'boxes_left'
+                = render 'default/boxes_left'
               %td#nav_column_center 
                 = yield
               %td#nav_column_right 
-                = render 'boxes_right'
-      = render('footer')
+                = render 'default/boxes_right'
+      = render('default/footer')
     
