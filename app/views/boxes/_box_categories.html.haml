@@ -1,6 +1,6 @@
 #accordion.panel-group
   .panel.panel-default
-    - child_category ||= main_category
+    - child_category ||= @main_category
     - child_category.child_categories.each do |sub_category| 
       - if sub_category.child_categories.length > 0
         .panel-heading#catergory-box-heading
