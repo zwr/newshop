@@ -17,6 +17,8 @@ class ProductPacked < Product
   field :price_packed,      type: Float
   field :price_unpacked,    type: Float
   field :packing,           type: Float
+  field :weight_unpacked,   type: Float
+  field :weight_packed,     type: Float
 
   # Method show_price must be defined in every subclass and must
   # show the price as it is displayed in the product view

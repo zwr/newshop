@@ -5,12 +5,37 @@ class Product
   # id (implicitelly defined by MongoMapper),
   field :name, type: String
   field :description, type: String
+  field :image_file, type: String # lets store images instead later TODO
+  field :date_added, type: Time
+  field :last_modified, type: Time
+  field :tax, type: String
+  
+  field :orders_count, type: Integer
+  field :sort, type: Integer
+  field :master_cat_id, type: String
+  field :mixed_discount_quantity, type: Boolean # so what is this? TODO
+  field :can_ship, type: Boolean
+  field :product_is_frozen, type: Boolean
 
+  #supplier information
+  field :supplier_id, type: String
+  field :supplier_estimated_products_in_uni, type: Float
+  field :supplier_unit_name, type: String
+  field :supplier_quantitiy_is_estimated, type: Boolean
+  field :supplier_product_id, type: String
+  field :supplier_order_unit_count, type: Float
+  field :sort_order_supply, type: Integer
+  field :is_supply_item, type: Boolean
+  
   # Other fields, that might not be used by
   # inherited classes:
   field :url, type: String
   field :quantity, type: Float
   field :price, type: Float
+  field :weight, type: Float
+  field :price_sorter, type: Integer # no idea what this is, should check if it is exactly same as price
+                                     # seems only 269 plantalaurin is TODO
+ 
 
   validates :name, uniqueness: true, presence: true
   # We had to disable following validation because some descriptions are
