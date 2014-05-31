@@ -1,6 +1,6 @@
 .box
   .panel.panel-default
     .panel-heading.box_heading
-      .panel-title #{box_title}
+      .panel-title #{title.to_s}
     .panel-body
-      = render("boxes/#{box_name}.html.haml")
+      = render("boxes/#{partial}.html.haml")

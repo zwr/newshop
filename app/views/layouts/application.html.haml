@@ -14,11 +14,16 @@
           .container-fluid
             .row
               .col-sm-3#boxes_left
-                = render 'default/boxes_left'
+                #column_left
+                  - Front.boxes[:left].each do |box|
+                    .box_categories
+                      = render 'boxes/box', box
               .col-sm-6#center_main
                 = yield
               .col-sm-3#boxes_right
-                = render 'default/boxes_right'
+                - Front.boxes[:right].each do |box|
+                  .box_categories
+                    = render 'boxes/box', box
           = render('default/footer')
         .col-sm-1
       
