@@ -4,7 +4,7 @@ class Tax < TaxDefinition
   # Settings specified here are used by the tax_helper and others.
   
   # Tax groups and current rates
-  tax_group :general, 24
+  tax_group :general, 24, default: true
   tax_group :food, 14
   tax_group :books, 10
 

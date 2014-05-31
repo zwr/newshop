@@ -10,7 +10,9 @@ class TaxDefinition
     def config
       self
     end
-    
+    def default_tax_group
+      tax_groups.find{ |t| t[:default] }
+    end
     attr_reader :tax_groups
     attr_accessor :show_price_with_tax 
   end
