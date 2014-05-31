@@ -9,5 +9,5 @@ class Tax < TaxDefinition
   tax_group :books, 10
 
   # Show prices with VAT (as in Europe), or without sales tax (as in US)
-  self.show_price_with_tax=true
+  config.show_price_with_tax=true
 end

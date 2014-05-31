@@ -7,7 +7,9 @@ class TaxDefinition
       @tax_groups << options
     end
     
-    
+    def config
+      self
+    end
     
     attr_reader :tax_groups
     attr_accessor :show_price_with_tax 
