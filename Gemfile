@@ -53,3 +53,4 @@ gem 'bson_ext'
 # Markdown parser, global object Markdown defined in Application.rb with object
 # accessible as NewshopSqlite::Application::Markdown
 gem 'redcarpet'
+gem "app"
