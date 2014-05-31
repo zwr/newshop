@@ -50,6 +50,8 @@ gem "haml"
 gem 'mongoid', '~> 4.0.0.beta1',github: 'mongoid/mongoid'
 gem 'bson_ext'
 
+gem 'puma'
+
 # Markdown parser, global object Markdown defined in Application.rb with object
 # accessible as NewshopSqlite::Application::Markdown
 gem 'redcarpet'
