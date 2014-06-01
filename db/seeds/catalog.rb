@@ -1,4 +1,3 @@
-puts 'Seeding the catalog' unless Rails.env.test?
 Category.all.delete
 top_category = Category.new(:name => 'Main')
 top_category.id = '1'

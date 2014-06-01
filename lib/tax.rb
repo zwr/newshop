@@ -17,15 +17,3 @@ class TaxDefinition
     attr_accessor :show_price_with_tax 
   end
 end
-
-class MyClass 
-  class << self
-    def initialize
-      @variable = false
-    end
-    attr_accessor :variable 
-  end
-  
-  variable = true;
-  puts variable
-end
