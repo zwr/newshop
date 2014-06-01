@@ -8,7 +8,7 @@ class Product
   field :image_file, type: String # lets store images instead later TODO
   field :date_added, type: Time
   field :last_modified, type: Time
-  field :tax, type: String
+  field :tax, type: Symbol
   
   field :orders_count, type: Integer
   field :sort, type: Integer

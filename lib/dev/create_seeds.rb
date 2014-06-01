@@ -129,7 +129,7 @@ output = rs.map do |row|
     image_file:   '#{row['products_image'].gsub('categories/','')}',
     date_added:   Time.parse('#{row['products_date_added']}'),
     last_modified:Time.parse('#{row['products_last_modified']}'),
-    tax:          #{row['products_tax_class_id']},
+    tax:          #{case row['products_tax_class_id'] when 1 then ':general' when 2 then ':food' when 4 then 'books' end},
     weight:       #{row['products_weight']},
     orders_count: #{"%d" % row['products_ordered']},
     sort:         #{row['products_sort_order']},
