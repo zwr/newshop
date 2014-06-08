@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class MainControllerTest < ActionController::TestCase
-=begin
   setup do
     Product.all.delete
     Category.all.delete
@@ -13,7 +12,6 @@ class MainControllerTest < ActionController::TestCase
     Product.all.delete
     Category.all.delete
   end
-=end
   test "should get get" do
     get :get
     assert_response :success
