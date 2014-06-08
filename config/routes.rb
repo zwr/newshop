@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'main/get'
   root 'main#get'
 
   get :admin, to: 'admin/admin_main#get'
