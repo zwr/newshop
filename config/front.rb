@@ -12,4 +12,6 @@ class Front < LayoutDefinition
     box :toc, partial: 'box_test'
     box :links, partial: 'box_test'
     box :paytrail, partial: 'box_test'
+
+  ui.showemptygroups = false
 end

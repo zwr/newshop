@@ -21,5 +21,8 @@ class LayoutDefinition
     end
     
     attr_reader :boxes
+    attr_accessor :showemptygroups
+    
+    def ui; self end
   end
 end
