@@ -26,7 +26,11 @@ module Newshop
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-        
+
+    # Following line should be needed, but seems it is not.
+    # config.hamlcoffee.basename = true
+    
+    
     Markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(render_options = {}), extensions = {}) 
   end
 end

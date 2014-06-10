@@ -8,6 +8,15 @@ GIT
       origin (~> 2.1)
       tzinfo (>= 0.3.37)
 
+GIT
+  remote: https://github.com/netzpirat/haml_coffee_assets
+  revision: 1c5038429dbcf14151759913352376107d62c891
+  specs:
+    haml_coffee_assets (1.16.0)
+      coffee-script (~> 2.0)
+      sprockets (~> 2.0)
+      tilt (~> 1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -168,8 +177,10 @@ DEPENDENCIES
   bson_ext
   coffee-rails (~> 4.0.0)
   erb2haml
+  execjs
   factory_girl_rails (~> 4.0)
   haml
+  haml_coffee_assets!
   jbuilder (~> 2.0)
   jquery-rails
   marionette-rails

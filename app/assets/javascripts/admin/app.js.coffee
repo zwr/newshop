@@ -1,6 +1,19 @@
-NewshopAdmin = new Marionette.Application()
+$ ->
+  NewshopAdmin = new Marionette.Application()
 
-NewshopAdmin.on "initialize:after", -> console.log "NewshopAdmin has started"
-  
+  NewshopAdmin.addRegions { mainRegion: "#main-region" }
 
-NewshopAdmin.start()
+  Backbone.Marionette.Renderer.render = (template, data) ->
+    if (!JST[template]) 
+      throw "Template '" + template + "' not found!"
+    return JST[template](data)
+  NewshopAdmin.StaticView = Marionette.ItemView.extend { template: "static" }
+
+  NewshopAdmin.on "initialize:after", ->
+    setTimeout ->
+      console.log "NewshopAdmin has started"
+      staticView = new NewshopAdmin.StaticView()
+      NewshopAdmin.mainRegion.show staticView
+    , 3000
+
+  NewshopAdmin.start()

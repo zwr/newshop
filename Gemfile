@@ -59,3 +59,5 @@ gem 'redcarpet'
 # client side app frameworks
 gem 'backbone-rails'
 gem 'marionette-rails'
+gem 'haml_coffee_assets', git: "https://github.com/netzpirat/haml_coffee_assets"
+gem 'execjs'

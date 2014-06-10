@@ -6,5 +6,8 @@
 #= require bootstrap
 #= require backbone-rails
 #= require backbone.marionette
+#= require hamlcoffee
 
+#= require_tree ./admin/templates
 #= require_tree ./admin
+
