@@ -55,3 +55,7 @@ gem 'puma'
 # Markdown parser, global object Markdown defined in Application.rb with object
 # accessible as NewshopSqlite::Application::Markdown
 gem 'redcarpet'
+
+# client side app frameworks
+gem 'backbone-rails'
+gem 'marionette-rails'

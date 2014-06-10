@@ -38,6 +38,8 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    backbone-rails (1.1.0)
+      rails (>= 3.0.0)
     bootstrap-sass (3.1.1.1)
       sass (~> 3.2)
     bson (2.2.2)
@@ -81,6 +83,8 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    marionette-rails (1.8.3)
+      railties (>= 3.1)
     mime-types (1.25.1)
     minitest (5.3.3)
     moped (2.0.0.rc1)
@@ -159,6 +163,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  backbone-rails
   bootstrap-sass (~> 3.1.1)
   bson_ext
   coffee-rails (~> 4.0.0)
@@ -167,6 +172,7 @@ DEPENDENCIES
   haml
   jbuilder (~> 2.0)
   jquery-rails
+  marionette-rails
   mongoid (~> 4.0.0.beta1)!
   puma
   rails (= 4.1.0)
