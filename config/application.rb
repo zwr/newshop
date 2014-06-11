@@ -28,7 +28,7 @@ module Newshop
     # config.i18n.default_locale = :de
 
     # Following line should be needed, but seems it is not.
-    # config.hamlcoffee.basename = true
+    config.hamlcoffee.basename = true
     
     
     Markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(render_options = {}), extensions = {}) 
