@@ -1,0 +1,1 @@
+NewshopAdmin.Product = Backbone.Model.extend {}

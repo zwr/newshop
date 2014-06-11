@@ -1,0 +1,9 @@
+%p
+  %strong Id:
+  = @id
+%p
+  %strong Name:
+  = @name
+%p
+  %strong Description:
+  = @description

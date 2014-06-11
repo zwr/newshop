@@ -1,0 +1,1 @@
+NewshopAdmin.ProductView = Marionette.ItemView.extend { template: "product" }
