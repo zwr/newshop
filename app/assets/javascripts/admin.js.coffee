@@ -8,6 +8,7 @@
 #= require backbone.marionette
 #= require hamlcoffee
 
+#= require ./admin/app
 #= require_tree ./admin/templates
 #= require_tree ./admin
 

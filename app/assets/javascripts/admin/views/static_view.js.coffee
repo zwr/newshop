@@ -1,0 +1,1 @@
+NewshopAdmin.StaticView = Marionette.ItemView.extend { template: "static" }
